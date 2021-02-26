@@ -78,6 +78,21 @@ $(function () {
           </div>
         </div>`);
         break;
+        case 3:
+          $slide =
+        $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+            <div class="video-container">
+              <video controls poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://www.w3schools.com/html/mov_bbb.mp4" >
+                <!-- fallback 1 -->
+                <a href="https://www.emailonacid.com" ><img height="176" 
+                  src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg" width="320" /></a>
+              </video>
+            </div>          
+          </div>
+        </div>`);
+        break;
         default: $slide =
         $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
           <div class="slide__darkbg slide--${numSlide}__darkbg"></div>

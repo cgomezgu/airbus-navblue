@@ -587,3 +587,14 @@ body {
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
 }
+
+/* video settings */
+.video-container {
+  width: 50vw;
+  z-index: 19;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
