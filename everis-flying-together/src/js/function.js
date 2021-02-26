@@ -3,6 +3,7 @@ import $ from 'jquery';
 $(function () {
   const $cont = $('.container');
   const $slider = $('.slider');
+  let $slide = 1;
   const $nav = $('.nav');
   const winW = $(window).width();
   const animSpd = 750;
@@ -42,29 +43,42 @@ $(function () {
     const numSlide = arrCities.indexOf(arrCities[city]) + 1;
     const firstLetter = arrCitiesDivided[city][0].charAt(0);
  
-    const $slide =
-      $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-        <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-        <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-          <div class="slide-container">
-            <h2>${arrClaims[numSlide - 1]}</h2>
-            <p>${arrClaimsDetail[numSlide - 1]}</p>
-            <div class="${slideComparatorContainer}">
-              <figure class="image-container">
-                <img src="https://webdevtrick.com/wp-content/uploads/skynature.jpg" alt="Original Image">
-                <span class="image-label" data-type="original">Original</span>
-              
-                <div class="resize-image"> 
-                  <span class="image-label" data-type="modified">Modified</span>
-                </div>
-              
-                <span class="handle"></span>
-              </figure> 
-            </div>
+    switch (numSlide) {
+      case 1:
+        $slide =
+        $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+            <div class="slide-container">
+              <h2>${arrClaims[numSlide - 1]}</h2>
+              <p>${arrClaimsDetail[numSlide - 1]}</p>              
+            </div>            
           </div>
-          
-        </div>
-      </div>`);
+        </div>`);
+        break;
+      case 2 :
+        $slide =
+        $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+            <div class="slide-container">
+              <h2>${arrClaims[numSlide - 1]}</h2>
+              <p>${arrClaimsDetail[numSlide - 1]}</p>
+              <div class="${slideComparatorContainer}">
+                <figure class="image-container">
+                  <img src="https://webdevtrick.com/wp-content/uploads/skynature.jpg" alt="Original Image">                
+                  <span class="image-label" data-type="original">Texto 1</span>              
+                  <div class="resize-image"> 
+                    <span class="image-label" data-type="modified">Texto 2</span>
+                  </div>              
+                  <span class="handle"></span>
+                </figure> 
+              </div>
+            </div>          
+          </div>
+        </div>`);
+        break;
+      }
  
     const letter =
     $(`<div class="slide__letter slide--${numSlide}__letter">
