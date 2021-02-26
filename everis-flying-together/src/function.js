@@ -13,11 +13,12 @@ $(function () {
   let diff = 0;
  
   // Generating slides
-  let arrCities = ['Why us', 'Producto', 'Delivery', 'Tecnología', 'Cabina de avión'];
+  let arrCities = ['Why us', 'Producto', 'Delivery', 'Tecnología', 'Cabina'];
   let arrClaims = ['1 - Título', '2 - Título', '3 - Título', '4 - Título', '5 - Título'];
   let arrClaimsDetail = ['Descripción corta del contenido de la sección 1', 'Descripción larga del contenido de la sección 2 Descripción larga del contenido de la sección 2', 'Descripción larga del contenido de la sección 3', 'Descripción larga del contenido de la sección 4', 'Descripción larga del contenido de la sección 5'];
   let numOfCities = arrCities.length;
   let arrCitiesDivided = [];
+  let slideComparatorContainer = "slide-comparator-container";
  
   arrCities.map(city => {
     let length = city.length;
@@ -42,13 +43,26 @@ $(function () {
     const firstLetter = arrCitiesDivided[city][0].charAt(0);
  
     const $slide =
-    $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+      $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
         <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
         <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
           <div class="slide-container">
             <h2>${arrClaims[numSlide - 1]}</h2>
             <p>${arrClaimsDetail[numSlide - 1]}</p>
+            <div class="${slideComparatorContainer}">
+              <figure class="image-container">
+                <img src="https://webdevtrick.com/wp-content/uploads/skynature.jpg" alt="Original Image">
+                <span class="image-label" data-type="original">Original</span>
+              
+                <div class="resize-image"> 
+                  <span class="image-label" data-type="modified">Modified</span>
+                </div>
+              
+                <span class="handle"></span>
+              </figure> 
+            </div>
           </div>
+          
         </div>
       </div>`);
  
@@ -206,4 +220,85 @@ $(function () {
     if (delta > 0 || e.originalEvent.detail < 0) navigateLeft();
     if (delta < 0 || e.originalEvent.detail > 0) navigateRight();
   });
+
+
+  // comparator-slider
+  //check if the .image-container is in the viewport 
+    //if yes, animate it
+    checkPosition($('.image-container'));
+    $(window).on('scroll', function(){
+        checkPosition($('.image-container'));
+    });
+    
+    //make the .handle element draggable and modify .resize-image width according to its position
+    drags($('.handle'), $('.resize-image'), $('.image-container'), $('.image-label[data-type="original"]'), $('.image-label[data-type="modified"]'));
+ 
+    //upadate images label visibility
+    $(window).on('resize', function(){
+        updateLabel($('.image-label[data-type="modified"]'), $('.resize-image'), 'left');
+        updateLabel($('.image-label[data-type="original"]'), $('.resize-image'), 'right');
+    });
 });
+
+
+function checkPosition(container) {
+  if( $(window).scrollTop() + $(window).height()*0.5 > container.offset().top) {
+      container.addClass('is-visible');
+      //you can uncomment the following line if you don't have other events to bind to the window scroll
+      // $(window).off('scroll');
+  }
+}
+
+//draggable funtionality
+function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
+  dragElement.on("mousedown vmousedown", function(e) {
+      dragElement.addClass('draggable');
+      resizeElement.addClass('resizable');
+
+      var dragWidth = dragElement.outerWidth(),
+          xPosition = dragElement.offset().left + dragWidth - e.pageX,
+          containerOffset = container.offset().left,
+          containerWidth = container.outerWidth(),
+          minLeft = containerOffset + 10,
+          maxLeft = containerOffset + containerWidth - dragWidth - 10;
+      
+      dragElement.parents().on("mousemove vmousemove", function(e) {
+          let leftValue = e.pageX + xPosition - dragWidth;
+          
+          //constrain the draggable element to move inside his container
+          if(leftValue < minLeft ) {
+              leftValue = minLeft;
+          } else if ( leftValue > maxLeft) {
+              leftValue = maxLeft;
+          }
+
+          let widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+          
+          $('.draggable').css('left', widthValue).on("mouseup vmouseup", function() {
+              $(this).removeClass('draggable');
+              resizeElement.removeClass('resizable');
+          });
+
+          $('.resizable').css('width', widthValue); 
+
+          updateLabel(labelResizeElement, resizeElement, 'left');
+          updateLabel(labelContainer, resizeElement, 'right');
+          
+      }).on("mouseup vmouseup", function(e){
+          dragElement.removeClass('draggable');
+          resizeElement.removeClass('resizable');
+      });
+      e.preventDefault();
+  }).on("mouseup vmouseup", function(e) {
+      dragElement.removeClass('draggable');
+      resizeElement.removeClass('resizable');
+  });
+}
+
+function updateLabel(label, resizeElement, position) {
+  if(position == 'left') {
+      ( label.offset().left + label.outerWidth() < resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
+  } else {
+      ( label.offset().left > resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
+  }
+}
