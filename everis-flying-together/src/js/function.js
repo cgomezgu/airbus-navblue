@@ -47,7 +47,7 @@ $(function () {
       case 1:
         $slide =
         $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+          <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>
           <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
             <div class="slide-container">
               <h2>${arrClaims[numSlide - 1]}</h2>

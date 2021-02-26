@@ -1,0 +1,10 @@
+/* video settings */
+.video-container {
+  width: 50vw;
+  z-index: 19;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}

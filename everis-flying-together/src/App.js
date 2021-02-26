@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './css/main.css';
+import './css/video.css';
+import './css/animated-gradient.css';
 import './js/function.js';
 
 class App extends Component {
