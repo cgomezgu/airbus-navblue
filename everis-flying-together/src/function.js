@@ -1,6 +1,6 @@
 import $ from 'jquery'; 
 
-$(document).ready(function () {
+$(function () {
   const $cont = $('.container');
   const $slider = $('.slider');
   const $nav = $('.nav');
@@ -13,7 +13,9 @@ $(document).ready(function () {
   let diff = 0;
  
   // Generating slides
-  let arrCities = ['Automobiles', 'Coding', 'Real Estate', 'Search Engine', 'Graphics'];
+  let arrCities = ['Why us', 'Producto', 'Delivery', 'Tecnología', 'Cabina de avión'];
+  let arrClaims = ['1 - Título', '2 - Título', '3 - Título', '4 - Título', '5 - Título'];
+  let arrClaimsDetail = ['Descripción corta del contenido de la sección 1', 'Descripción larga del contenido de la sección 2 Descripción larga del contenido de la sección 2', 'Descripción larga del contenido de la sección 3', 'Descripción larga del contenido de la sección 4', 'Descripción larga del contenido de la sección 5'];
   let numOfCities = arrCities.length;
   let arrCitiesDivided = [];
  
@@ -24,6 +26,14 @@ $(document).ready(function () {
  
     return arrCitiesDivided.push(city.match(exp));
   });
+
+  arrClaims.map(claim => {
+    return claim;
+  })
+
+  arrClaimsDetail.map(claimDetail => {
+    return claimDetail;
+  })
  
   let generateSlide = function (city) {
     let frag1 = $(document.createDocumentFragment());
@@ -33,9 +43,14 @@ $(document).ready(function () {
  
     const $slide =
     $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-		<div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-		<div class="slide__text-wrapper slide--${numSlide}__text-wrapper"></div>
-		</div>`);
+        <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+        <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+          <div class="slide-container">
+            <h2>${arrClaims[numSlide - 1]}</h2>
+            <p>${arrClaimsDetail[numSlide - 1]}</p>
+          </div>
+        </div>
+      </div>`);
  
     const letter =
     $(`<div class="slide__letter slide--${numSlide}__letter">
