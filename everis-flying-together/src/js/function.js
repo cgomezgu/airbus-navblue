@@ -78,6 +78,17 @@ $(function () {
           </div>
         </div>`);
         break;
+        default: $slide =
+        $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+            <div class="slide-container">
+              <h2>${arrClaims[numSlide - 1]}</h2>
+              <p>${arrClaimsDetail[numSlide - 1]}</p>              
+            </div>            
+          </div>
+        </div>`);
+        break;
       }
  
     const letter =
@@ -310,7 +321,7 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
 }
 
 function updateLabel(label, resizeElement, position) {
-  if(position == 'left') {
+  if(position === 'left') {
       ( label.offset().left + label.outerWidth() < resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
   } else {
       ( label.offset().left > resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
