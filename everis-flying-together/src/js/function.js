@@ -313,8 +313,12 @@ $(function () {
     });
 
 
-  // draggable clouds
-  $( ".draggable-cloud" ).draggable();
+  // draggable/fadeOut clouds
+  $( ".draggable-cloud" ).draggable({
+    start: function() {
+         $(this).fadeTo("slow", 0.1);
+    }
+  });
 });
 
 
