@@ -125,7 +125,21 @@ $(function () {
               </div>
             </div>`);
         break;
-
+        case 5: 
+          $slide = 
+            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+              <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+                <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+                  <div class="button-container">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>`);
+          break;
         default: $slide =
         $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
           <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
