@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 
 /* Basic reset */
 * {
@@ -14,7 +9,7 @@
 /* */
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-logo-container {
@@ -447,12 +442,12 @@ body {
   padding: 32px;
   background: black;
   font-size: 64px;
+  color: white;
   z-index: 3;
 }
 
 .slide-container h1 {
   font-size: 64px;
-  color: white;
 }
 
 .slide-container p {
