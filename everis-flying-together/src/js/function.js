@@ -110,13 +110,17 @@ $(function () {
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
              
               <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-              <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-                <div class="draggable-container">
-                  <div class="draggable-clouds">
-                    <div id="draggable" class="ui-widget-content cloud-1" />
+                <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+                  <div class="draggable-container">
+                    <div class="draggable-clouds">
+                      <ul>
+                        <li class="ui-widget-content draggable-cloud cloud-1" />
+                        <li class="ui-widget-content draggable-cloud cloud-2" />
+                      </ul>
+                      
+                    </div>
+                    
                   </div>
-                  
-                </div>
                 </div>          
               </div>
             </div>`);
@@ -293,11 +297,11 @@ $(function () {
 
   // comparator-slider
   //check if the .image-container is in the viewport 
-    //if yes, animate it
-    checkPosition($('.image-container'));
-    $(window).on('scroll', function(){
-        checkPosition($('.image-container'));
-    });
+  //if yes, animate it
+  checkPosition($('.image-container'));
+  $(window).on('scroll', function(){
+      checkPosition($('.image-container'));
+  });
     
     //make the .handle element draggable and modify .resize-image width according to its position
     drags($('.handle'), $('.resize-image'), $('.image-container'), $('.image-label[data-type="original"]'), $('.image-label[data-type="modified"]'));
@@ -309,8 +313,8 @@ $(function () {
     });
 
 
-    // draggable clouds
-    $( "#draggable" ).draggable();
+  // draggable clouds
+  $( ".draggable-cloud" ).draggable();
 });
 
 
