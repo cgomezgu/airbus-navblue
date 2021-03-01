@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/navblue-white-logo.png';
 import './css/main.css';
 import './css/video.css';
 import './css/animated-gradient.css';
+import './css/draggable.css';
 import './js/function.js';
 
 class App extends Component {
@@ -18,13 +19,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
-        <div className="container">
+        <section>
+          <div className="main-logo-container">
+            <img src={logo} alt="navblue"  className="main-logo"/>
+          </div>          
+        </section>
+        <section className="container">
           <div className="slider"></div>
           <div className="nav"></div>
           <div data-target='right' className="side-nav side-nav--right"></div>
           <div data-target='left' className="side-nav side-nav--left"></div>
-        </div>
+        </section>
       </div>
     );
   }
