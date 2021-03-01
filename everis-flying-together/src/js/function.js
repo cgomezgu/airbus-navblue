@@ -132,9 +132,15 @@ $(function () {
                 <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
                   <div class="button-container">
                     <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
+                      <li>
+                        <button href="#">1</button>
+                      </li>
+                      <li>
+                        <button href="#">2</button>
+                      </li>
+                      <li>
+                        <button href="#">3</button>
+                      </li>
                     </ul>
                   </div>
               </div>
