@@ -47,11 +47,23 @@ $(function () {
       case 1:
         $slide =
         $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+          <div class="clouds">
+            <img class="cloud-1" style="--i:1;"/>
+            <img class="cloud-2" style="--i:2;"/>
+            <img class="cloud-3" style="--i:3;"/>
+            <img class="cloud-4" style="--i:4;"/>
+            <img class="cloud-5" style="--i:5;"/>
+            <img class="cloud-6" style="--i:10;"/>
+            <img class="cloud-7" style="--i:9;"/>
+            <img class="cloud-8" style="--i:8;"/>
+            <img class="cloud-9" style="--i:7;"/>
+            <img class="cloud-10" style="--i:6;"/>
+          </div>
           <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>
           <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
             <div class="slide-container">
               <h2>${arrClaims[numSlide - 1]}</h2>
-              <p>${arrClaimsDetail[numSlide - 1]}</p>              
+              <p>${arrClaimsDetail[numSlide - 1]}</p>
             </div>            
           </div>
         </div>`);

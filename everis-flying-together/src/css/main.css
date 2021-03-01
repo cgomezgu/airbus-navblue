@@ -296,7 +296,7 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   list-style-type: none;
-  z-index: 10;
+  z-index: 100;
 }
 .nav__slide {
   position: relative;
@@ -430,13 +430,14 @@ body {
   display: flex;
   flex-direction: column;
   padding: 32px;
-  background: red;
+  background: black;
   font-size: 64px;
   z-index: 3;
 }
 
 .slide-container h1 {
   font-size: 64px;
+  color: white;
 }
 
 .slide-container p {
@@ -450,7 +451,7 @@ body {
   width: 768px;
   height: 500px;
   background-color: #fff;
-  z-index: 5;
+  z-index: 999;
 }
 
 /* slide comparataro */
@@ -591,4 +592,69 @@ body {
   -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+
+/* gradient animated */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* clouds */
+.clouds {
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+
+  animation: animate calc(3s * var(--i)) linear infinite;
+}
+.cloud-1 {
+  background: url("../images/clouds/cloud1.png") center bottom no-repeat;
+}
+.cloud-2 {
+  background: url("../images/clouds/cloud2.png") center bottom no-repeat;
+}
+.cloud-3 {
+  background: url("../images/clouds/cloud3.png") center bottom no-repeat;
+}
+.cloud-4 {
+  background: url("../images/clouds/cloud4.png") center bottom no-repeat;
+}
+.cloud-5 {
+  background: url("../images/clouds/cloud5.png") center bottom no-repeat;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
 }
