@@ -177,8 +177,7 @@ body {
 }
 .slide--1__darkbg {
   left: 0%;
-  background: url("https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg")
-    center center no-repeat;
+  background: url("../images/sky-1.png") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -257,8 +256,7 @@ body {
 }
 .slide--4__darkbg {
   left: -150%;
-  background: url("https://images.pexels.com/photos/270669/pexels-photo-270669.jpeg")
-    center center no-repeat;
+  background: url("../images/plain-wing-before.png") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -272,11 +270,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(11, 15, 39, 0.83);
+  background-color: rgba(11, 15, 39, 0.2);
 }
 .slide--4__letter {
-  background: url("https://images.pexels.com/photos/270669/pexels-photo-270669.jpeg")
-    center center no-repeat;
+  background: url("../images/plain-wing.png") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }

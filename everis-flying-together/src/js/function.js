@@ -70,41 +70,53 @@ $(function () {
         break;
       case 2 :
         $slide =
-        $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-            <div class="slide-container">
-              <h2>${arrClaims[numSlide - 1]}</h2>
-              <p>${arrClaimsDetail[numSlide - 1]}</p>
-              <div class="${slideComparatorContainer}">
-                <figure class="image-container">
-                  <img src="https://webdevtrick.com/wp-content/uploads/skynature.jpg" alt="Original Image">                
-                  <span class="image-label" data-type="original">Texto 1</span>              
-                  <div class="resize-image"> 
-                    <span class="image-label" data-type="modified">Texto 2</span>
-                  </div>              
-                  <span class="handle"></span>
-                </figure> 
-              </div>
-            </div>          
-          </div>
-        </div>`);
+          $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+            <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+            <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+              <div class="slide-container">
+                <h2>${arrClaims[numSlide - 1]}</h2>
+                <p>${arrClaimsDetail[numSlide - 1]}</p>
+                <div class="${slideComparatorContainer}">
+                  <figure class="image-container">
+                    <img src="https://webdevtrick.com/wp-content/uploads/skynature.jpg" alt="Original Image">                
+                    <span class="image-label" data-type="original">Texto 1</span>              
+                    <div class="resize-image"> 
+                      <span class="image-label" data-type="modified">Texto 2</span>
+                    </div>              
+                    <span class="handle"></span>
+                  </figure> 
+                </div>
+              </div>          
+            </div>
+          </div>`);
         break;
         case 3:
           $slide =
-        $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-          <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-            <div class="video-container">
-              <video controls poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://www.w3schools.com/html/mov_bbb.mp4" >
-                <!-- fallback 1 -->
-                <a href="https://www.emailonacid.com" ><img height="176" 
-                  src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg" width="320" /></a>
-              </video>
-            </div>          
-          </div>
-        </div>`);
+            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+              <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+              <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+                <div class="video-container">
+                  <video controls poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://www.w3schools.com/html/mov_bbb.mp4" >
+                    <!-- fallback 1 -->
+                    <a href="https://www.emailonacid.com" ><img height="176" 
+                      src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg" width="320" /></a>
+                  </video>
+                </div>          
+              </div>
+            </div>`);
         break;
+        case 4:
+          $slide =
+            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+              <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+              <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+                <div class="draggable-container">
+                  
+                </div>          
+              </div>
+            </div>`);
+        break;
+
         default: $slide =
         $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
           <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
