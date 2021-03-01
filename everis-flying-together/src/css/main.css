@@ -194,7 +194,14 @@ body {
 }
 .slide--1__animated-gradient:after {
   content: "";
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(
+    -45deg,
+    #cee9f2,
+    #f4d6eb,
+    #23a6d5,
+    #f4d6eb,
+    #cee9f2
+  );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
