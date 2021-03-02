@@ -7,7 +7,6 @@ import './css/animated-gradient.css';
 import './css/draggable.css';
 import './css/glowing-button.css';
 import './js/function.js';
-
 class App extends Component {
   constructor () {
     super()

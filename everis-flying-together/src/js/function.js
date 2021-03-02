@@ -1,4 +1,5 @@
 import $ from 'jquery'; 
+import imageOriginal from '../images/draggable-comparator/libellule_web.jpg';
 
 $(function () {
   const $cont = $('.container');
@@ -70,15 +71,11 @@ $(function () {
         break;
       case 2 :
         $slide =
-          $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-            <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-            <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
+          $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">           
               <div class="slide-container">
-                <h2>${arrClaims[numSlide - 1]}</h2>
-                <p>${arrClaimsDetail[numSlide - 1]}</p>
                 <div class="${slideComparatorContainer}">
                   <figure class="image-container">
-                    <img src="https://webdevtrick.com/wp-content/uploads/skynature.jpg" alt="Original Image">                
+                    <img src=${imageOriginal} alt="Original Image">                
                     <span class="image-label" data-type="original">Texto 1</span>              
                     <div class="resize-image"> 
                       <span class="image-label" data-type="modified">Texto 2</span>
@@ -86,42 +83,64 @@ $(function () {
                     <span class="handle"></span>
                   </figure> 
                 </div>
-              </div>          
-            </div>
+              </div> 
           </div>`);
         break;
         case 3:
           $slide =
-            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-              <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-              <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-                <div class="video-container">
-                  <video controls muted poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://www.w3schools.com/html/mov_bbb.mp4" >
-                    <!-- fallback 1 -->
-                    <a href="https://www.emailonacid.com" ><img height="176" 
-                      src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg" width="320" /></a>
-                  </video>
-                </div>          
+            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">  
+              <div class="clouds">
+                <img class="cloud-1" style="--i:1;"/>
+                <img class="cloud-2" style="--i:2;"/>
+                <img class="cloud-3" style="--i:3;"/>
+                <img class="cloud-4" style="--i:4;"/>
+                <img class="cloud-5" style="--i:5;"/>
+                <img class="cloud-6" style="--i:10;"/>
+                <img class="cloud-7" style="--i:9;"/>
+                <img class="cloud-8" style="--i:8;"/>
+                <img class="cloud-9" style="--i:7;"/>
+                <img class="cloud-10" style="--i:6;"/>
               </div>
+              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>            
+              <div class="video-container">
+                <video 
+                  onmouseover="dataset.over=true;controls=true"
+                  onmouseout="delete dataset.over;if(paused) controls=false;" 
+                  class="with-shadow" 
+                  muted 
+                  poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" 
+                  src="https://www.w3schools.com/html/mov_bbb.mp4" >
+                  <!-- fallback 1 -->
+                  <a href="https://www.emailonacid.com" ><img height="176" 
+                    src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg" width="320" /></a>
+                </video>
+              </div>  
             </div>`);
         break;
         case 4:
           $slide =
-            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-             
+            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">     
+              <div class="clouds">
+                <img class="cloud-1" style="--i:1;"/>
+                <img class="cloud-2" style="--i:2;"/>
+                <img class="cloud-3" style="--i:3;"/>
+                <img class="cloud-4" style="--i:4;"/>
+                <img class="cloud-5" style="--i:5;"/>
+                <img class="cloud-6" style="--i:10;"/>
+                <img class="cloud-7" style="--i:9;"/>
+                <img class="cloud-8" style="--i:8;"/>
+                <img class="cloud-9" style="--i:7;"/>
+                <img class="cloud-10" style="--i:6;"/>
+              </div>        
               <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-                <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-                  <div class="draggable-container">
-                    <div class="draggable-clouds">
-                      <ul>
-                        <li class="ui-widget-content draggable-cloud cloud-1" />
-                        <li class="ui-widget-content draggable-cloud cloud-2" />
-                      </ul>
-                      
-                    </div>
-                    
-                  </div>
-                </div>          
+                <div class="draggable-container">
+                  <div class="draggable-clouds">
+                    <ul>
+                      <li class="ui-widget-content draggable-cloud cloud-1" />
+                      <li class="ui-widget-content draggable-cloud cloud-2" />
+                    </ul>                      
+                  </div>                    
+                </div>        
               </div>
             </div>`);
         break;
@@ -129,20 +148,18 @@ $(function () {
           $slide = 
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
               <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-                <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-                  <div class="button-container">
-                    <ul>
-                      <li>
-                        <button href="#">1</button>
-                      </li>
-                      <li>
-                        <button href="#">2</button>
-                      </li>
-                      <li>
-                        <button href="#">3</button>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="button-container">
+                <ul>
+                  <li>
+                    <button href="#">Descarga PDF</button>
+                  </li>
+                  <li>
+                    <button href="#">Link to</button>
+                  </li>
+                  <li>
+                    <button href="#">CTA</button>
+                  </li>
+                </ul>
               </div>
             </div>`);
           break;
@@ -244,34 +261,34 @@ $(function () {
   }
  
   // Events
-  $(document).on('mousedown touchstart', '.slide', function (e) {
-    if (animation) return;
-    let target = +$(this).attr('data-target');
-    let startX = e.pageX || e.originalEvent.touches[0].pageX;
-    $slider.removeClass('animation');
+  // $(document).on('mousedown touchstart', '.slide', function (e) {
+  //   if (animation) return;
+  //   let target = +$(this).attr('data-target');
+  //   let startX = e.pageX || e.originalEvent.touches[0].pageX;
+  //   $slider.removeClass('animation');
  
-    $(document).on('mousemove touchmove', function (e) {
-      let x = e.pageX || e.originalEvent.touches[0].pageX;
-      diff = startX - x;
-      if ((target === 1 && diff < 0) || (target === numOfCities && diff > 0)) return;
+  //   $(document).on('mousemove touchmove', function (e) {
+  //     let x = e.pageX || e.originalEvent.touches[0].pageX;
+  //     diff = startX - x;
+  //     if ((target === 1 && diff < 0) || (target === numOfCities && diff > 0)) return;
  
-      $slider.css({
-        'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)' });
- 
- 
-      $slider.find('.slide__darkbg').css({
-        'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)' });
+  //     $slider.css({
+  //       'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)' });
  
  
-      $slider.find('.slide__letter').css({
-        'transform': 'translate3d(' + diff / 60 + 'vw, 0, 0)' });
+  //     $slider.find('.slide__darkbg').css({
+  //       'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)' });
  
  
-      $slider.find('.slide__text').css({
-        'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)' });
+  //     $slider.find('.slide__letter').css({
+  //       'transform': 'translate3d(' + diff / 60 + 'vw, 0, 0)' });
  
-    });
-  });
+ 
+  //     $slider.find('.slide__text').css({
+  //       'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)' });
+ 
+  //   });
+  // });
  
   $(document).on('mouseup touchend', function (e) {
     $(document).off('mousemove touchmove');
@@ -336,7 +353,7 @@ $(function () {
   // draggable/fadeOut clouds
   $( ".draggable-cloud" ).draggable({
     start: function() {
-         $(this).fadeTo("slow", 0.1);
+      $(this).fadeTo("slow", 0.1);
     }
   });
 });
