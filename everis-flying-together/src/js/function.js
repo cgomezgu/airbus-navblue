@@ -1,5 +1,5 @@
 import $ from 'jquery'; 
-import imageOriginal from '../images/draggable-comparator/libellule_web.jpg';
+import imageOriginal from '../images/draggable-comparator/libellule_blueprint_web.jpg';
 
 $(function () {
   const $cont = $('.container');
@@ -15,7 +15,7 @@ $(function () {
   let diff = 0;
  
   // Generating slides
-  let arrCities = ['Why us', 'Producto', 'Delivery', 'Tecnología', 'Cabina'];
+  let arrCities = ['Flying', 'Producto', 'Delivery', 'Tecnología', 'Cabina'];
   let arrClaims = ['1 - Título', '2 - Título', '3 - Título', '4 - Título', '5 - Título'];
   let arrClaimsDetail = ['Descripción corta del contenido de la sección 1', 'Descripción larga del contenido de la sección 2 Descripción larga del contenido de la sección 2', 'Descripción larga del contenido de la sección 3', 'Descripción larga del contenido de la sección 4', 'Descripción larga del contenido de la sección 5'];
   let numOfCities = arrCities.length;
@@ -60,13 +60,205 @@ $(function () {
             <img class="cloud-9" style="--i:7;"/>
             <img class="cloud-10" style="--i:6;"/>
           </div>
-          <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>
-          <div class="slide__text-wrapper slide--${numSlide}__text-wrapper">
-            <div class="slide-container">
-              <h2>${arrClaims[numSlide - 1]}</h2>
-              <p>${arrClaimsDetail[numSlide - 1]}</p>
-            </div>            
+          <div class="contact-area">
+            <div class="contact contact-1">
+              <main>
+                <section>
+                  <div class="content">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
+
+                    <aside>
+                      <h1>Riccardo Cavallo</h1>
+                      <p>Hi, I'm Riccardo Cavallo and I'm a Graphic and Visual Designer.</p>
+                    </aside>
+                    
+                    <button id="button">
+                      <span>Contact Me</span>
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
+                    </button>
+                  </div>
+
+                  <div class="title"><p>Contact Me</p></div>
+                </section>
+
+                
+              </main>
+
+              <nav>
+                <a href="#" class="gmail">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Email</h1>
+                    <span>Riccavallo@gmail.com</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+
+                <a href="#" class="facebook">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Facebook</h1>
+                    <span>Riccardo Cavallo</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+
+                <a href="#" class="twitter">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Twitter</h1>
+                    <span>@RichoxDesign</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="contact">
+              <main>
+                <section>
+                  <div class="content">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
+
+                    <aside>
+                      <h1>Riccardo Cavallo</h1>
+                      <p>Hi, I'm Riccardo Cavallo and I'm a Graphic and Visual Designer.</p>
+                    </aside>
+                    
+                    <button>
+                      <span>Contact Me</span>
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
+                    </button>
+                  </div>
+
+                  <div class="title"><p>Contact Me</p></div>
+                </section>
+
+                
+              </main>
+
+              <nav>
+                <a href="#" class="gmail">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Email</h1>
+                    <span>Riccavallo@gmail.com</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+
+                <a href="#" class="facebook">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Facebook</h1>
+                    <span>Riccardo Cavallo</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+
+                <a href="#" class="twitter">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Twitter</h1>
+                    <span>@RichoxDesign</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="contact">
+              <main>
+                <section>
+                  <div class="content">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
+
+                    <aside>
+                      <h1>Riccardo Cavallo</h1>
+                      <p>Hi, I'm Riccardo Cavallo and I'm a Graphic and Visual Designer.</p>
+                    </aside>
+                    
+                    <button>
+                      <span>Contact Me</span>
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
+                    </button>
+                  </div>
+
+                  <div class="title"><p>Contact Me</p></div>
+                </section>
+
+                
+              </main>
+
+              <nav>
+                <a href="#" class="gmail">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Email</h1>
+                    <span>Riccavallo@gmail.com</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+
+                <a href="#" class="facebook">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Facebook</h1>
+                    <span>Riccardo Cavallo</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+
+                <a href="#" class="twitter">
+                  <div class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div class="content">
+                    <h1>Twitter</h1>
+                    <span>@RichoxDesign</span>
+                  </div>
+                  
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+                </a>
+              </nav>
+            </div>
           </div>
+          <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>
+
         </div>`);
         break;
       case 2 :
@@ -75,10 +267,18 @@ $(function () {
               <div class="slide-container">
                 <div class="${slideComparatorContainer}">
                   <figure class="image-container">
-                    <img src=${imageOriginal} alt="Original Image">                
-                    <span class="image-label" data-type="original">Texto 1</span>              
+                    <div class="image-label">
+                      <h3>Trend</h3>
+                      <ul>
+                        <li>texto 1</li>
+                        <li>texto 2</li>
+                        <li>texto 3</li>
+                        <li>texto 4</li>
+                      </ul>
+                    </div>
+                   
+                    <img src=${imageOriginal} alt="Original Image"> 
                     <div class="resize-image"> 
-                      <span class="image-label" data-type="modified">Texto 2</span>
                     </div>              
                     <span class="handle"></span>
                   </figure> 
@@ -103,17 +303,7 @@ $(function () {
               </div>
               <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>            
               <div class="video-container">
-                <video 
-                  onmouseover="dataset.over=true;controls=true"
-                  onmouseout="delete dataset.over;if(paused) controls=false;" 
-                  class="with-shadow" 
-                  muted 
-                  poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" 
-                  src="https://www.w3schools.com/html/mov_bbb.mp4" >
-                  <!-- fallback 1 -->
-                  <a href="https://www.emailonacid.com" ><img height="176" 
-                    src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg" width="320" /></a>
-                </video>
+                <iframe poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg"  src="https://player.vimeo.com/video/518638996" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>  
             </div>`);
         break;
@@ -136,8 +326,12 @@ $(function () {
                 <div class="draggable-container">
                   <div class="draggable-clouds">
                     <ul>
-                      <li class="ui-widget-content draggable-cloud cloud-1" />
-                      <li class="ui-widget-content draggable-cloud cloud-2" />
+                      <li>
+                        <div class="ui-widget-content draggable-cloud cloud-1" />
+                      </li>
+                      <li>
+                        <div class="ui-widget-content draggable-cloud cloud-2" />
+                      </li>
                     </ul>                      
                   </div>                    
                 </div>        
@@ -158,6 +352,13 @@ $(function () {
                   </li>
                   <li>
                     <button href="#">CTA</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="button-container-bottom">
+                <ul>
+                  <li>
+                    <button href="#">Descarga PDF</button>
                   </li>
                 </ul>
               </div>
@@ -261,34 +462,6 @@ $(function () {
   }
  
   // Events
-  // $(document).on('mousedown touchstart', '.slide', function (e) {
-  //   if (animation) return;
-  //   let target = +$(this).attr('data-target');
-  //   let startX = e.pageX || e.originalEvent.touches[0].pageX;
-  //   $slider.removeClass('animation');
- 
-  //   $(document).on('mousemove touchmove', function (e) {
-  //     let x = e.pageX || e.originalEvent.touches[0].pageX;
-  //     diff = startX - x;
-  //     if ((target === 1 && diff < 0) || (target === numOfCities && diff > 0)) return;
- 
-  //     $slider.css({
-  //       'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)' });
- 
- 
-  //     $slider.find('.slide__darkbg').css({
-  //       'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)' });
- 
- 
-  //     $slider.find('.slide__letter').css({
-  //       'transform': 'translate3d(' + diff / 60 + 'vw, 0, 0)' });
- 
- 
-  //     $slider.find('.slide__text').css({
-  //       'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)' });
- 
-  //   });
-  // });
  
   $(document).on('mouseup touchend', function (e) {
     $(document).off('mousemove touchmove');
@@ -340,14 +513,9 @@ $(function () {
       checkPosition($('.image-container'));
   });
     
-    //make the .handle element draggable and modify .resize-image width according to its position
-    drags($('.handle'), $('.resize-image'), $('.image-container'), $('.image-label[data-type="original"]'), $('.image-label[data-type="modified"]'));
- 
-    //upadate images label visibility
-    $(window).on('resize', function(){
-        updateLabel($('.image-label[data-type="modified"]'), $('.resize-image'), 'left');
-        updateLabel($('.image-label[data-type="original"]'), $('.resize-image'), 'right');
-    });
+  //make the .handle element draggable and modify .resize-image width according to its position
+  drags($('.handle'), $('.resize-image'), $('.image-container'), $('.image-label[data-type="original"]'), $('.image-label[data-type="modified"]'));
+
 
 
   // draggable/fadeOut clouds
@@ -355,6 +523,13 @@ $(function () {
     start: function() {
       $(this).fadeTo("slow", 0.1);
     }
+  });
+
+  $('#button').on("click", function(){
+    $('#button').toggleClass('active');
+    $('.contact-1 .title').toggleClass('active');
+    $('.contact-1 nav').toggleClass('active');
+    console.log("clicked")
   });
 });
 
@@ -399,8 +574,6 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
 
           $('.resizable').css('width', widthValue); 
 
-          updateLabel(labelResizeElement, resizeElement, 'left');
-          updateLabel(labelContainer, resizeElement, 'right');
           
       }).on("mouseup vmouseup", function(e){
           dragElement.removeClass('draggable');
@@ -413,10 +586,3 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
   });
 }
 
-function updateLabel(label, resizeElement, position) {
-  if(position === 'left') {
-      ( label.offset().left + label.outerWidth() < resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
-  } else {
-      ( label.offset().left > resizeElement.offset().left + resizeElement.outerWidth() ) ? label.removeClass('is-hidden') : label.addClass('is-hidden') ;
-  }
-}
