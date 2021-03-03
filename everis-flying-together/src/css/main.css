@@ -134,6 +134,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 11;
+  background: skyblue;
 }
 .slide__text-wrapper h1 {
   margin-bottom: 30px;
@@ -216,18 +218,8 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
-.slide--1__letter {
-  background: url("https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg")
-    center center no-repeat;
-  background-position: 0px center, 0px center;
-  background-size: cover;
-}
 .slide--2__darkbg {
   left: -50%;
-  background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg")
-    center center no-repeat;
-  background-size: cover;
-  background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   will-change: transform;
@@ -239,13 +231,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(11, 15, 39, 0.83);
 }
-.slide--2__letter {
-  background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?")
-    center center no-repeat;
-  background-position: 0px center, 0px center;
-  background-size: cover;
+.slide--2__animated-gradient:after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    #cee9f2,
+    #f4d6eb,
+    #66c2e4,
+    #f4d6eb,
+    #cee9f2
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 .slide--3__darkbg {
   left: -100%;
@@ -829,3 +827,5 @@ body {
   color: #5976aa;
 }
 /* */
+
+/* SLIDE 2 */

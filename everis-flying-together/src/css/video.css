@@ -10,14 +10,8 @@
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 66%;
-  height: 100%;
   z-index: 15;
 }
-.video-container video {
-  width: 100%;
-  height: auto;
-}
-.video-container video.with-shadow {
-  box-shadow: 0 70px 70px rgb(0 0 0 / 15%);
+.video-container iframe.with-shadow {
+  box-shadow: 0 30px 30px rgb(0 0 0 / 15%);
 }
