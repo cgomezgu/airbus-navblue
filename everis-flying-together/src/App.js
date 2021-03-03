@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './images/navblue-white-logo.png';
 import 'jquery-ui-dist/jquery-ui';
 import './css/main.css';
-import './css/video.css';
 import './css/animated-gradient.css';
 import './css/draggable-clouds.css';
 import './css/draggable-comparator.css';

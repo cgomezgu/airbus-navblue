@@ -323,10 +323,38 @@ $(function () {
                 <img class="cloud-9" style="--i:7;"/>
                 <img class="cloud-10" style="--i:6;"/>
               </div>
-              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>            
-              <div class="video-container">
-                <iframe poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://player.vimeo.com/video/518638996" class="with-shadow" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-              </div>  
+              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>     
+              <div class="slide__wrapper-video">                    
+                <div class="video-container">
+                  <iframe poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://player.vimeo.com/video/518638996" class="with-shadow" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>  
+                <div class="bullets-container">
+                  <div class="bullet bullet-1"> 
+                    <span class="lnr lnr-star-half"></span>
+                    <div class="bullet-text">
+                      <p>Walk together looking into the future</p>
+                    </div> 
+                  </div>
+                  <div class="bullet bullet-1"> 
+                    <span class="lnr lnr-star-half"></span>
+                    <div class="bullet-text">
+                      <p>Walk together looking into the future</p>
+                    </div> 
+                  </div>
+                  <div class="bullet bullet-1"> 
+                    <span class="lnr lnr-star-half"></span>
+                    <div class="bullet-text">
+                      <p>Walk together looking into the future</p>
+                    </div> 
+                  </div>
+                  <div class="bullet bullet-1"> 
+                    <span class="lnr lnr-star-half"></span>
+                    <div class="bullet-text">
+                      <p>Walk together looking into the future</p>
+                    </div> 
+                  </div>
+                </div>
+              </div> 
             </div>`);
         break;
         case 4:
@@ -409,11 +437,7 @@ $(function () {
         </div>`);
         break;
       }
- 
-    const letter =
-    $(`<div class="slide__letter slide--${numSlide}__letter">
-		${firstLetter}
-		</div>`);
+    
  
     for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
       const text =
@@ -427,7 +451,6 @@ $(function () {
     frag2.append(navSlide);
     $nav.append(frag2);
  
-    $slide.find(`.slide--${numSlide}__text-wrapper`).append(letter).append(frag1);
     $slider.append($slide);
  
     if (arrCities[city].length <= 4) {
@@ -550,9 +573,8 @@ $(function () {
   drags($('.handle'), $('.resize-image'), $('.image-container'), $('.image-label[data-type="original"]'), $('.image-label[data-type="modified"]'));
 
 
-
   // draggable/fadeOut clouds
-  $( ".draggable-cloud" ).draggable({
+  $(".draggable-cloud").draggable({
     start: function() {
       $(this).fadeTo("slow", 0.1);
     }
@@ -562,7 +584,6 @@ $(function () {
     $('#button').toggleClass('active');
     $('.contact-1 .title').toggleClass('active');
     $('.contact-1 nav').toggleClass('active');
-    console.log("clicked")
   });
 });
 
