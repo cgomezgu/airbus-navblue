@@ -396,7 +396,7 @@ $(function () {
         case 5: 
           $slide = 
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-              <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+            <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
               <div class="slide__text-wrapper">
                 <h1>Let´s take off together</h1>
                 <h3>We just consolidated an awesome trip together. But it is the beginning of the flight.
@@ -423,6 +423,7 @@ $(function () {
                   </li>
                 </ul>
               </div>
+              <div id="parallax-img" class="parallax-img"></div>
             </div>`);
           break;
         default: $slide =
@@ -585,6 +586,26 @@ $(function () {
     $('.contact-1 .title').toggleClass('active');
     $('.contact-1 nav').toggleClass('active');
   });
+
+
+
+  // Add event listener
+ document.addEventListener("mousemove", parallax);
+ const elem = document.querySelector(".slide--5__darkbg");
+ // Magic happens here
+ function parallax(e) {
+     let _w = window.innerWidth/2;
+     let _h = window.innerHeight/2;
+     let _mouseX = e.clientX;
+     let _mouseY = e.clientY;
+     let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+     let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+     let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+     console.log(x);
+     elem.style.backgroundPosition = x;
+ }
+/* */
 });
 
 
@@ -595,6 +616,10 @@ function checkPosition(container) {
       // $(window).off('scroll');
   }
 }
+
+/* */
+
+ 
 
 //draggable funtionality
 function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
