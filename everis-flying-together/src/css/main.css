@@ -153,14 +153,17 @@ body {
   color: white;
   background: #194a8a;
 }
-.slide__text-wrapper h3 {
-  margin-top: 4px;
+.slide__text-wrapper .slide__text--subtitle {
+  background-color: #cef3ff;
+  text-align: right;
+  max-width: 630px;
+  padding: 8px;
+}
+.slide__text-wrapper .h3 {
   color: #194a8a;
   font-size: 21px;
   font-weight: bold;
   letter-spacing: -0.51px;
-  max-width: 630px;
-  text-align: right;
 }
 
 .slide--1__darkbg {
@@ -281,6 +284,10 @@ body {
   transform: translateX(-50%);
   list-style-type: none;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
 }
 .nav__slide {
   position: relative;

@@ -15,27 +15,16 @@
 .slide--1 .card-area .card {
   display: flex;
   align-items: center;
-  width: 240px;
-  height: 160px;
+  width: 220px;
+  height: 150px;
   margin-right: 56px;
-  padding: 40px 28px;
+  padding: 40px 20px;
   color: #194a8a;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  background: white;
 }
 .slide--1 .card-area .card:last-child {
   margin-right: 0;
-}
-.slide--1 .card-area .card-1 {
-  background-color: rgba(226, 199, 218, 0.4);
-}
-.slide--1 .card-area .card-2 {
-  background-color: rgba(215, 206, 225, 0.46);
-}
-.slide--1 .card-area .card-3 {
-  background-color: rgba(200, 214, 227, 0.4);
-}
-.slide--1 .card-area .card-4 {
-  background-color: rgba(203, 222, 229, 0.53);
 }

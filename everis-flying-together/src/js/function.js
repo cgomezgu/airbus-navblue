@@ -1,5 +1,5 @@
 import $ from 'jquery'; 
-import imageOriginal from '../images/draggable-comparator/blueprint-wing-web.png';
+import imageOriginal from '../images/draggable-comparator/blueprint-wing-web.jpg';
 
 $(function () {
   const $cont = $('.container');
@@ -50,20 +50,22 @@ $(function () {
           <div class="slide__wrapper">
             <div class="slide__text-wrapper">
               <h1>everis Flying Together</h1>
-              <h3>We are ready to raise your wings.</h3>
-              <h3>We will guide you on this incredible flight</h3>              
+              <div class="slide__text--subtitle">
+                <h3>We are ready to raise your wings.</h3>
+                <h3>We will guide you on this incredible flight</h3>    
+              </div>                        
             </div>  
             <div class="card-area">
-              <div class="card card-1">
+              <div class="card">
                 <p>WE ENGAGE SINCE THE FIRST PI</p>                                  
               </div> 
-              <div class="card card-2">
+              <div class="card">
                 <p>FOR US, DELIVERY IS FIRST</p>                                  
               </div> 
-              <div class="card card-3">
+              <div class="card">
                 <p>WE BELIEVE IN ONE TEAM</p>                                  
               </div> 
-              <div class="card card-4">
+              <div class="card">
                 <p>TOGETHER 'REACH FOR SKIES'</p>                                  
               </div>
             </div> 
@@ -88,7 +90,9 @@ $(function () {
           $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">    
             <div class="slide__text-wrapper">
               <h1>Product</h1>
-              <h3>Just like the strong wings of dragonflies, we adapt our products to your needs and get the best out of them</h3>
+              <div class="slide__text--subtitle">
+                <h3>Just like the strong wings of dragonflies, we adapt our products to your needs and get the best out of them</h3>
+              </div>
             </div>                    
             <div class="slide-container">
               <div class="${slideComparatorContainer}">
@@ -107,8 +111,9 @@ $(function () {
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">  
               <div class="slide__text-wrapper">
                 <h1>Planned delivery</h1>
-                <h3>Like the versatility of a bird's wings, we make the delivery go as planned.
-                </h3>
+                <div class="slide__text--subtitle">
+                  <h3>Like the versatility of a bird's wings, we make the delivery go as planned.</h3>
+                </div>
               </div>  
               <div class="clouds">
                 <img class="cloud-1" style="--i:1;"/>
@@ -122,32 +127,29 @@ $(function () {
                 <img class="cloud-9" style="--i:7;"/>
                 <img class="cloud-10" style="--i:6;"/>
               </div>
-              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>     
-              <div class="slide__wrapper-video">                    
+              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>  
+              <p class="txt-instructions">Watch our film to discover some of our experts.</p>       
+              <div class="slide__wrapper-video">                                
                 <div class="video-container">
                   <iframe poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://player.vimeo.com/video/518638996" class="with-shadow" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>  
                 <div class="bullets-container">
                   <div class="bullet bullet-1"> 
-                    <span class="lnr lnr-star-half"></span>
                     <div class="bullet-text">
                       <p>Walk together looking into the future</p>
                     </div> 
                   </div>
                   <div class="bullet bullet-1"> 
-                    <span class="lnr lnr-star-half"></span>
                     <div class="bullet-text">
                       <p>Walk together looking into the future</p>
                     </div> 
                   </div>
                   <div class="bullet bullet-1"> 
-                    <span class="lnr lnr-star-half"></span>
                     <div class="bullet-text">
                       <p>Walk together looking into the future</p>
                     </div> 
                   </div>
                   <div class="bullet bullet-1"> 
-                    <span class="lnr lnr-star-half"></span>
                     <div class="bullet-text">
                       <p>Walk together looking into the future</p>
                     </div> 
@@ -161,24 +163,25 @@ $(function () {
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">   
             <div class="slide__text-wrapper">
               <h1>Let´s take off together</h1>
-              <h3>In the cockpit we will fly to a new destination</h3>
-            </div>
-               
-              <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-                <div class="draggable-container">
-                  <div class="draggable-clouds">
-                    <ul>
-                      <li>
-                        <div class="ui-widget-content draggable-cloud cloud-1" />
-                      </li>
-                      <li>
-                        <div class="ui-widget-content draggable-cloud cloud-2" />
-                      </li>
-                    </ul>                      
-                  </div>                    
-                </div>        
+              <div class="slide__text--subtitle">
+                <h3>In the cockpit we will fly to a new destination</h3>
               </div>
-            </div>`);
+            </div>               
+            <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+              <div class="draggable-container">
+                <div class="draggable-clouds">
+                  <ul>
+                    <li>
+                      <div class="ui-widget-content draggable-cloud cloud-1" />
+                    </li>
+                    <li>
+                      <div class="ui-widget-content draggable-cloud cloud-2" />
+                    </li>
+                  </ul>                      
+                </div>                    
+              </div>        
+            </div>
+          </div>`);
         break;
         case 5: 
           $slide = 
@@ -186,7 +189,9 @@ $(function () {
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>           
               <div class="slide__text-wrapper">
                 <h1>Let´s take off together</h1>
-                <h3>In the cockpit we will fly to a new destination</h3>
+                <div class="slide__text--subtitle">
+                  <h3>In the cockpit we will fly to a new destination</h3>
+                </div>
               </div>  
               <div class="btn-container">
                 <p class="txt-instructions">Remember to check all instruments before take-off</p>
@@ -209,20 +214,20 @@ $(function () {
                     <p class="title">TECHNOLOGY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <a class="btn" href="#" target="_blank"><span>Lorem ipsum dolor est</span>everis Winder</a>
-                      <a class="btn" href="#" target="_blank"><span>Lorem ipsum dolor est</span>Dashboard</a>
-                      <a class="btn" href="#" target="_blank"><span>Lorem ipsum dolor est</span>AI showcase</a>
+                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>everis Winder</a>
+                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>Dashboard</a>
+                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>AI showcase</a>
                     </div>
                   </div>
                 </div>               
               </div>
               <div class="btn-container-bottom">  
                 <span class="step-num">1</span>            
-                <a id="btnDownload1" class="btn btn-download" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EVKovJv5RglJvzoMhfOkmIwBZa8PVuGcdcy61WL1RAE5PQ?e=g9yNAH" target="_blank">
+                <a id="btnDownload1" class="btn btn-download" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EXsyikrAS7JOhna0fIgSsWQBO1UD87tCQ5QdZXrrpGFQ-A?e=xfj5HI" target="_blank">
                   <i class="lnr lnr-download"></i>1 Download the proposal
                 </a> 
                 <span class="step-num">2</span>     
-                <a id="btnDownload2" class="btn btn-download is-disabled" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EVKovJv5RglJvzoMhfOkmIwBZa8PVuGcdcy61WL1RAE5PQ?e=g9yNAH" target="_blank">
+                <a id="btnDownload2" class="btn btn-download bg-blue is-disabled" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EXsyikrAS7JOhna0fIgSsWQBO1UD87tCQ5QdZXrrpGFQ-A?e=xfj5HI" target="_blank">
                   <i class="lnr lnr-download"></i>2 Download the proposal
                 </a>                  
               </div>

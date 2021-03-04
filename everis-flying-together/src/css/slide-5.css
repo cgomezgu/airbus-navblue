@@ -1,11 +1,11 @@
 /* title section */
 .slide--5 .slide__text-wrapper h1 {
-  background-color: rgba(215, 229, 242, 0.75);
+  background-color: #eaf9ff;
   color: #194a8a;
 }
 
-.slide--5 .slide__text-wrapper h3 {
-  color: white;
+.slide--5 .slide__text-wrapper .slide__text--subtitle h3 {
+  color: #194a8a;
 }
 
 /* instructions interactions */
@@ -43,12 +43,12 @@
 
 /* parallax cabin effect */
 .cd-background-wrapper {
-  overflow: hidden;
-  perspective: 4000px;
+  /* overflow: hidden;
+  perspective: 4000px; */
   position: absolute;
   z-index: 10;
 }
-
+/* 
 .cd-floating-background {
   transform-style: preserve-3d;
 }
@@ -63,7 +63,7 @@
 
 .cd-floating-background img:nth-child(3) {
   transform: translateZ(400px);
-}
+} */
 
 .cd-floating-background-image-1 {
   background: url("../images/slide-5/pilot-cabin-transp.png") center center

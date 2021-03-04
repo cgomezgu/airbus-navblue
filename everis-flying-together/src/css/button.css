@@ -90,14 +90,6 @@
   z-index: 15;
 }
 
-.btn.is-disabled,
-.btn-container-bottom .btn.is-disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-  text-decoration: none;
-  background-color: #7da8e0;
-}
-
 /* download button */
 .btn-container-bottom .btn {
   width: 298px;
@@ -112,6 +104,16 @@
   line-height: normal;
   letter-spacing: -0.39px;
   color: #194a8a;
+}
+.btn-container-bottom .btn.bg-blue {
+  background-color: #cee9f2;
+}
+.btn.is-disabled,
+.btn-container-bottom .btn.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+  background-color: #7da8e0;
 }
 .btn-container-bottom .btn-download .lnr {
   font-size: 16px;
