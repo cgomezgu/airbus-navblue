@@ -1,7 +1,11 @@
 /* title section */
 .slide--5 .slide__text-wrapper h1 {
-  background-color: #d7e5f2;
+  background-color: rgba(215, 229, 242, 0.75);
   color: #194a8a;
+}
+
+.slide--5 .slide__text-wrapper h3 {
+  color: white;
 }
 
 /* instructions interactions */
@@ -21,6 +25,20 @@
   background: #194a8a;
   opacity: 0.6;
   z-index: 11;
+}
+
+/* */
+.step-num {
+  margin-right: 12px;
+  width: 69px;
+  height: 69px;
+  border: solid 1px #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: initial;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
 }
 
 /* parallax cabin effect */

@@ -56,32 +56,29 @@
   border-bottom: 0;
 }
 
-.btn-container .btn,
-.btn-container-bottom .btn {
-  display: flex;
+.btn {
   padding: 8px 20px;
+  width: auto;
+  height: 40px;
   font-size: 13px;
   font-weight: bold;
   text-align: center;
   line-height: 24px;
   color: #194a8a;
   background-color: white;
-  border-radius: 40px;
+  border-radius: 10px;
   border: 0;
   transition: 0.5s;
 }
-.btn-container button:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
-    0 0 0 45px rgba(255, 255, 255, 0.05), 0 0 0 30px rgba(255, 255, 255, 0.05),
-    0 0 0 15px rgba(255, 255, 255, 0.05);
+.btn:hover,
+.btn-container-bottom .btn:hover {
+  background-color: #e6deef;
   cursor: pointer;
 }
 
 .btn-container-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 110px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: -ms-flexbox;
@@ -93,19 +90,88 @@
   z-index: 15;
 }
 
-.btn:disabled {
-  opacity: 0.5;
+.btn.is-disabled,
+.btn-container-bottom .btn.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+  background-color: #7da8e0;
 }
 
 /* download button */
-.btn-container-bottom .btn-download {
-  margin-bottom: 100px;
-  padding: 22px 36px;
+.btn-container-bottom .btn {
+  width: 298px;
+  height: 69px;
+  padding: 22px 38px;
+  border-radius: 34px;
+  background-color: #ffffff;
   font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.39px;
+  color: #194a8a;
 }
-
 .btn-container-bottom .btn-download .lnr {
   font-size: 16px;
   font-weight: bold;
   color: #194a8a;
+}
+/* */
+a {
+  background: #d2d7d3;
+  color: #222;
+  border-radius: 100%;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  width: 40px;
+  height: 28px;
+  margin: 0 2px;
+  padding-top: 12px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.icon:before {
+  font-family: "FontAwesome", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+a span {
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 5px 7px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+a span:before {
+  content: "";
+  /*   width: 0;
+  height: 0; */
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+a:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
 }

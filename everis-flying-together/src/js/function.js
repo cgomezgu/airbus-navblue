@@ -42,7 +42,6 @@ $(function () {
     let frag1 = $(document.createDocumentFragment());
     let frag2 = $(document.createDocumentFragment());
     const numSlide = arrCities.indexOf(arrCities[city]) + 1;
-    const firstLetter = arrCitiesDivided[city][0].charAt(0);
  
     switch (numSlide) {
       case 1:
@@ -88,22 +87,12 @@ $(function () {
         $slide =
           $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">    
             <div class="slide__text-wrapper">
-              <h1>Strong Wings</h1>
-              <h3>Just like the strong wings of dragonflies, we adapt our products to your needs and get the best out of them.
-              </h3>
+              <h1>Product</h1>
+              <h3>Just like the strong wings of dragonflies, we adapt our products to your needs and get the best out of them</h3>
             </div>                    
             <div class="slide-container">
               <div class="${slideComparatorContainer}">
-                <figure class="image-container">
-                  <div class="image-label">
-                    <h3>Trend</h3>
-                    <ul>
-                      <li>texto 1</li>
-                      <li>texto 2</li>
-                      <li>texto 3</li>
-                      <li>texto 4</li>
-                    </ul>
-                  </div>                   
+                <figure class="image-container">                                
                   <img src=${imageOriginal} alt="Original Image"> 
                   <div class="resize-image"> 
                   </div>              
@@ -170,11 +159,10 @@ $(function () {
         case 4:
           $slide =
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">   
-              <div class="slide__text-wrapper">
-                <h1>Everis Flying Together</h1>
-                <h3>We are ready to raise your wings.</h3>
-                <h3>We will guide you on this incredible flight.</h3>
-              </div>   
+            <div class="slide__text-wrapper">
+              <h1>Let´s take off together</h1>
+              <h3>In the cockpit we will fly to a new destination</h3>
+            </div>
                
               <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
                 <div class="draggable-container">
@@ -198,38 +186,45 @@ $(function () {
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>           
               <div class="slide__text-wrapper">
                 <h1>Let´s take off together</h1>
-                <h3>In the cockpit we will fly to a new destination.</h3>
+                <h3>In the cockpit we will fly to a new destination</h3>
               </div>  
               <div class="btn-container">
                 <p class="txt-instructions">Remember to check all instruments before take-off</p>
                 <div class="btn-wrapper">
-                  <div class="btn-contain">
+                  <span class="step-num">3</span>  
+                  <div class="btn-contain"> 
                     <p class="title">PRODUCT</p>
                     <div class="lines"></div>
-                    <button disabled class="btn">Intrends</button>
+                    <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>Inttrend</a>                    
                   </div>
                   <div class="btn-contain">
                     <p class="title">DELIVERY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <button disabled class="btn">One ticket</button>
-                      <button disabled class="btn">Genome</button>
+                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>One ticket</a>
+                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>genome</a>
                     </div>
                   </div>
                   <div class="btn-contain">
                     <p class="title">TECHNOLOGY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <button disabled class="btn">everis Winder</button>
-                      <button disabled class="btn">Kibana</button>
-                      <button disabled class="btn">Al showcase</button>
+                      <a class="btn" href="#" target="_blank"><span>Lorem ipsum dolor est</span>everis Winder</a>
+                      <a class="btn" href="#" target="_blank"><span>Lorem ipsum dolor est</span>Dashboard</a>
+                      <a class="btn" href="#" target="_blank"><span>Lorem ipsum dolor est</span>AI showcase</a>
                     </div>
                   </div>
                 </div>               
               </div>
-              <div class="btn-container-bottom">
-                <button id="btnDownload1" class="btn btn-download" href="#"><i class="lnr lnr-download"></i>1 Download the proposal</button>   
-                <button disabled id="btnDownload2" class="btn btn-download" href="#"><i class="lnr lnr-download"></i>2 Download the proposal</button>                  
+              <div class="btn-container-bottom">  
+                <span class="step-num">1</span>            
+                <a id="btnDownload1" class="btn btn-download" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EVKovJv5RglJvzoMhfOkmIwBZa8PVuGcdcy61WL1RAE5PQ?e=g9yNAH" target="_blank">
+                  <i class="lnr lnr-download"></i>1 Download the proposal
+                </a> 
+                <span class="step-num">2</span>     
+                <a id="btnDownload2" class="btn btn-download is-disabled" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EVKovJv5RglJvzoMhfOkmIwBZa8PVuGcdcy61WL1RAE5PQ?e=g9yNAH" target="_blank">
+                  <i class="lnr lnr-download"></i>2 Download the proposal
+                </a>                  
               </div>
               <div class="bg-dark"></div>
               <div class="cd-background-wrapper">
@@ -388,10 +383,10 @@ $(function () {
 
   // enable buttons 
   $('#btnDownload1').on("click", function(){
-    $('#btnDownload2').prop('disabled', false);
+    $('#btnDownload2').removeClass('is-disabled');
   });
   $('#btnDownload2').on("click", function(){
-    $('.btn-contain button').prop('disabled', false);
+    $('.btn-contain .btn').removeClass('is-disabled');
   });
 
 
