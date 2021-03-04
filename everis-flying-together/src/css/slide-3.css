@@ -1,0 +1,13 @@
+/* title section */
+.slide--3 .slide__text-wrapper h1 {
+  background-color: rgba(25, 74, 138, 0.75);
+  color: white;
+}
+.slide--3 .slide__text-wrapper h3 {
+  color: #194a8a;
+}
+
+.slide--3 .card-area {
+  display: flex;
+  margin: auto;
+}

@@ -1,11 +1,62 @@
-#parallax-img {
+/* title section */
+.slide--5 .slide__text-wrapper h1 {
+  background-color: #d7e5f2;
+  color: #194a8a;
+}
+
+/* instructions interactions */
+.txt-instructions {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bg-dark {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  content: "";
+  background: #194a8a;
+  opacity: 0.6;
+  z-index: 11;
+}
+
+/* parallax cabin effect */
+.cd-background-wrapper {
+  overflow: hidden;
+  perspective: 4000px;
+  position: absolute;
+  z-index: 10;
+}
+
+.cd-floating-background {
+  transform-style: preserve-3d;
+}
+
+.cd-floating-background img:first-child {
+  transform: translateZ(50px);
+}
+
+.cd-floating-background img:nth-child(2) {
+  transform: translateZ(290px);
+}
+
+.cd-floating-background img:nth-child(3) {
+  transform: translateZ(400px);
+}
+
+.cd-floating-background-image-1 {
   background: url("../images/slide-5/pilot-cabin-transp.png") center center
     no-repeat;
+  min-width: 100%;
+  min-height: 100vh;
   background-size: cover;
-  z-index: 10;
+}
+.cd-floating-background-image-2 {
+  background: url("../images/slide-5/control-tower.png") center center no-repeat;
+  min-width: 100%;
+  min-height: 100vh;
+  background-size: cover;
 }

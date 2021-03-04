@@ -50,212 +50,22 @@ $(function () {
         $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">          
           <div class="slide__wrapper">
             <div class="slide__text-wrapper">
-              <h1>Everis Flying Together</h1>
+              <h1>everis Flying Together</h1>
               <h3>We are ready to raise your wings.</h3>
-              <h3>We will guide you on this incredible flight.</h3>
-              <h3>Before going ahead with this journey, don’t forget to pick these 4 fundamentals. 
-              </h3>
+              <h3>We will guide you on this incredible flight</h3>              
             </div>  
-            <div class="contact-area">
-              <div class="contact contact-1">
-                <main>
-                  <section>
-                    <div class="content">
-                      <span class="lnr lnr-star-half"></span>
-                      <aside>
-                        <h1>WE ENGAGE SINCE THE FIRST PI</h1>
-                        <p>Lorem ipsum dolor est</p>
-                      </aside>                  
-                      <button id="button">
-                        <span>Show more</span>                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
-                      </button>
-                    </div>
-                    <div class="title"><p>Lore ipsum dolor est</p></div>
-                  </section>             
-                </main>
-                <nav>
-                  <a href="#" class="subsection subsection-1">
-                    <div class="icon">
-                      <span class="lnr lnr-earth"></span>
-                    </div>
-                    <div class="content">
-                      <h1>Title</h1>
-                      <span>Subtitle</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#" class="subsection subsection-2">
-                    <div class="icon">
-                      <span class="lnr lnr-chart-bars"></span>
-                    </div>
-                    <div class="content">
-                      <h1>Title</h1>
-                      <span>Subtitle</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#" class="subsection subsection-3">
-                    <div class="icon">
-                      <span class="lnr lnr-thumbs-up"></span>
-                    </div>
-                    <div class="content">
-                      <h1>Title</h1>
-                      <span>Subtitle</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                </nav>
-              </div>
-              <div class="contact contact-2">
-                <main>
-                  <section>
-                    <div class="content">
-                      <span class="lnr lnr-star-half"></span>
-                      <aside>
-                        <h1>WE ENGAGE SINCE THE FIRST PI</h1>
-                        <p>Lorem ipsum dolor est</p>
-                      </aside>                  
-                      <button id="button">
-                        <span>Show more</span>                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
-                      </button>
-                    </div>
-                    <div class="title"><p>Lorem ipsum dolor est</p></div>
-                  </section>             
-                </main>
-                <nav>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Title</h1>
-                      <span>Subtitle</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Facebook</h1>
-                      <span>Riccardo Cavallo</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Twitter</h1>
-                      <span>@RichoxDesign</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                </nav>
-              </div>
-              <div class="contact contact-3">
-                <main>
-                  <section>
-                    <div class="content">
-                      <span class="lnr lnr-star-half"></span>
-                      <aside>
-                        <h1>WE ENGAGE SINCE THE FIRST PI</h1>
-                        <p>Lorem ipsum dolor est</p>
-                      </aside>                  
-                      <button id="button">
-                        <span>Show more</span>                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
-                      </button>
-                    </div>
-                    <div class="title"><p>Lore ipsum dolor est</p></div>
-                  </section>             
-                </main>
-                <nav>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Title</h1>
-                      <span>Riccavallo@gmail.com</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Facebook</h1>
-                      <span>Riccardo Cavallo</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Twitter</h1>
-                      <span>@RichoxDesign</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                </nav>
-              </div>
-              <div class="contact contact-4">
-                <main>
-                  <section>
-                    <div class="content">
-                      <span class="lnr lnr-star-half"></span>
-                      <aside>
-                        <h1>WE ENGAGE SINCE THE FIRST PI</h1>
-                        <p>Lorem ipsum dolor est</p>
-                      </aside>                  
-                      <button id="button">
-                        <span>Show more</span>                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
-                      </button>
-                    </div>
-                    <div class="title"><p>Lore ipsum dolor est</p></div>
-                  </section>             
-                </main>
-                <nav>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Title</h1>
-                      <span>Riccavallo@gmail.com</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Facebook</h1>
-                      <span>Riccardo Cavallo</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                  <a href="#">
-                    <div class="icon">
-                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
-                    </div>
-                    <div class="content">
-                      <h1>Twitter</h1>
-                      <span>@RichoxDesign</span>
-                    </div>                
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-                  </a>
-                </nav>
+            <div class="card-area">
+              <div class="card card-1">
+                <p>WE ENGAGE SINCE THE FIRST PI</p>                                  
+              </div> 
+              <div class="card card-2">
+                <p>FOR US, DELIVERY IS FIRST</p>                                  
+              </div> 
+              <div class="card card-3">
+                <p>WE BELIEVE IN ONE TEAM</p>                                  
+              </div> 
+              <div class="card card-4">
+                <p>TOGETHER 'REACH FOR SKIES'</p>                                  
               </div>
             </div> 
           </div>
@@ -364,19 +174,8 @@ $(function () {
                 <h1>Everis Flying Together</h1>
                 <h3>We are ready to raise your wings.</h3>
                 <h3>We will guide you on this incredible flight.</h3>
-              </div>    
-              <div class="clouds">
-                <img class="cloud-1" style="--i:1;"/>
-                <img class="cloud-2" style="--i:2;"/>
-                <img class="cloud-3" style="--i:3;"/>
-                <img class="cloud-4" style="--i:4;"/>
-                <img class="cloud-5" style="--i:5;"/>
-                <img class="cloud-6" style="--i:10;"/>
-                <img class="cloud-7" style="--i:9;"/>
-                <img class="cloud-8" style="--i:8;"/>
-                <img class="cloud-9" style="--i:7;"/>
-                <img class="cloud-10" style="--i:6;"/>
-              </div>        
+              </div>   
+               
               <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
                 <div class="draggable-container">
                   <div class="draggable-clouds">
@@ -395,35 +194,52 @@ $(function () {
         break;
         case 5: 
           $slide = 
-            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-            <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+            $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">           
+            <div class="slide__darkbg slide--${numSlide}__darkbg"></div>           
               <div class="slide__text-wrapper">
                 <h1>Let´s take off together</h1>
-                <h3>We just consolidated an awesome trip together. But it is the beginning of the flight.
-                </h3>
-                <h3>Experience our different products/demos.</h3>
+                <h3>In the cockpit we will fly to a new destination.</h3>
               </div>  
-              <div class="button-container">
-                <ul>
-                  <li>
-                    <button href="#">Descarga PDF</button>
-                  </li>
-                  <li>
-                    <button href="#">Link to</button>
-                  </li>
-                  <li>
-                    <button href="#">CTA</button>
-                  </li>
-                </ul>
+              <div class="btn-container">
+                <p class="txt-instructions">Remember to check all instruments before take-off</p>
+                <div class="btn-wrapper">
+                  <div class="btn-contain">
+                    <p class="title">PRODUCT</p>
+                    <div class="lines"></div>
+                    <button disabled class="btn">Intrends</button>
+                  </div>
+                  <div class="btn-contain">
+                    <p class="title">DELIVERY</p>
+                    <div class="lines"></div>
+                    <div class="btn-flex">
+                      <button disabled class="btn">One ticket</button>
+                      <button disabled class="btn">Genome</button>
+                    </div>
+                  </div>
+                  <div class="btn-contain">
+                    <p class="title">TECHNOLOGY</p>
+                    <div class="lines"></div>
+                    <div class="btn-flex">
+                      <button disabled class="btn">everis Winder</button>
+                      <button disabled class="btn">Kibana</button>
+                      <button disabled class="btn">Al showcase</button>
+                    </div>
+                  </div>
+                </div>               
               </div>
-              <div class="button-container-bottom">
-                <ul>
-                  <li>
-                    <button href="#">Descarga PDF</button>
-                  </li>
-                </ul>
+              <div class="btn-container-bottom">
+                <button id="btnDownload1" class="btn btn-download" href="#"><i class="lnr lnr-download"></i>1 Download the proposal</button>   
+                <button disabled id="btnDownload2" class="btn btn-download" href="#"><i class="lnr lnr-download"></i>2 Download the proposal</button>                  
               </div>
-              <div id="parallax-img" class="parallax-img"></div>
+              <div class="bg-dark"></div>
+              <div class="cd-background-wrapper">
+                <figure class="cd-floating-background">
+                  <!-- images here -->
+                  <div class="cd-floating-background-image-1"></div>
+                  <div class="cd-floating-background-image-2"></div>                    
+                </figure>
+              </div>
+              
             </div>`);
           break;
         default: $slide =
@@ -480,20 +296,9 @@ $(function () {
     diff = 0;
     $slider.addClass('animation');
     $slider.css({
-      'transform': 'translate3d(-' + (curSlide - direction) * 100 + '%, 0, 0)' });
- 
- 
+      'transform': 'translate3d(-' + (curSlide - direction) * 100 + '%, 0, 0)' }); 
     $slider.find('.slide__darkbg').css({
       'transform': 'translate3d(' + (curSlide - direction) * 50 + '%, 0, 0)' });
- 
- 
-    $slider.find('.slide__letter').css({
-      'transform': 'translate3d(0, 0, 0)' });
- 
- 
-    $slider.find('.slide__text').css({
-      'transform': 'translate3d(0, 0, 0)' });
- 
   }
  
   function navigateRight() {
@@ -581,32 +386,134 @@ $(function () {
     }
   });
 
-  $('#button').on("click", function(){
-    $('#button').toggleClass('active');
-    $('.contact-1 .title').toggleClass('active');
-    $('.contact-1 nav').toggleClass('active');
+  // enable buttons 
+  $('#btnDownload1').on("click", function(){
+    $('#btnDownload2').prop('disabled', false);
+  });
+  $('#btnDownload2').on("click", function(){
+    $('.btn-contain button').prop('disabled', false);
   });
 
 
+/* */
 
-  // Add event listener
- document.addEventListener("mousemove", parallax);
- const elem = document.querySelector(".slide--5__darkbg");
- // Magic happens here
- function parallax(e) {
-     let _w = window.innerWidth/2;
-     let _h = window.innerHeight/2;
-     let _mouseX = e.clientX;
-     let _mouseY = e.clientY;
-     let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-     let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
-     let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-     console.log(x);
-     elem.style.backgroundPosition = x;
+ //define store some initial variables
+ var halfWindowH = $(window).height()*0.5,
+ halfWindowW = $(window).width()*0.5,
+ //define a max rotation value (X and Y axises)
+ maxRotationY = 5,
+ maxRotationX = 3,
+ aspectRatio;
+
+//detect if hero <img> has been loaded and evaluate its aspect-ratio
+$('.cd-floating-background').find('img').eq(0).on('load', function() {
+ aspectRatio = $(this).width()/$(this).height();
+   if( $('html').hasClass('preserve-3d') ) initBackground();
+}).each(function() {
+ //check if image was previously load - if yes, trigger load event
+   if(this.complete) $(this).load();
+});
+
+//detect mouse movement
+$('.cd-background-wrapper').each(function(){
+ $(this).on('mousemove', function(event){
+   var wrapperOffsetTop = $(this).offset().top;
+   if( $('html').hasClass('preserve-3d') ) {
+     window.requestAnimationFrame(function(){
+       moveBackground(event, wrapperOffsetTop);
+     });
+   }
+ });
+});
+
+//on resize - adjust .cd-background-wrapper and .cd-floating-background dimentions and position
+$(window).on('load', function(){
+ if( $('html').hasClass('preserve-3d') ) {
+   window.requestAnimationFrame(function(){
+     halfWindowH = $(window).height()*0.5,
+     halfWindowW = $(window).width()*0.5;
+     initBackground();
+   });
+ } else {
+   $('.cd-background-wrapper').attr('style', '');
+   $('.cd-floating-background').attr('style', '').removeClass('is-absolute');
  }
+});
+
+function initBackground() {
+ var wrapperHeight = Math.ceil(halfWindowW*2/aspectRatio), 
+   proportions = ( maxRotationY > maxRotationX ) ? 1.1/(Math.sin(Math.PI / 2 - maxRotationY*Math.PI/180)) : 1.1/(Math.sin(Math.PI / 2 - maxRotationX*Math.PI/180)),
+   newImageWidth = Math.ceil(halfWindowW*2*proportions),
+   newImageHeight = Math.ceil(newImageWidth/aspectRatio),
+   newLeft = halfWindowW - newImageWidth/2,
+   newTop = (wrapperHeight - newImageHeight)/2;
+
+ //set an height for the .cd-background-wrapper
+ $('.cd-background-wrapper').css({
+   'height' : wrapperHeight,
+ });
+ //set dimentions and position of the .cd-background-wrapper		
+ $('.cd-floating-background').addClass('is-absolute').css({
+   'left' : newLeft,
+   'top' : newTop,
+   'width' : newImageWidth,
+ });
+}
+
+function moveBackground(event, topOffset) {
+ var rotateY = ((-event.pageX+halfWindowW)/halfWindowW)*maxRotationY,
+   yPosition = event.pageY - topOffset,
+   rotateX = ((yPosition-halfWindowH)/halfWindowH)*maxRotationX;
+
+ if( rotateY > maxRotationY) rotateY = maxRotationY;
+ if( rotateY < -maxRotationY ) rotateY = -maxRotationY;
+ if( rotateX > maxRotationX) rotateX = maxRotationX;
+ if( rotateX < -maxRotationX ) rotateX = -maxRotationX;
+
+ $('.cd-floating-background').css({
+   '-moz-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+     '-webkit-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+   '-ms-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+   '-o-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+   'transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+ });
+}
 /* */
 });
+
+(function getPerspective(){
+  var element = document.createElement('p'),
+      html = document.getElementsByTagName('html')[0],
+      body = document.getElementsByTagName('body')[0],
+      propertys = {
+        'webkitTransformStyle':'-webkit-transform-style',
+        'MozTransformStyle':'-moz-transform-style',
+        'msTransformStyle':'-ms-transform-style',
+        'transformStyle':'transform-style'
+      };
+
+    body.insertBefore(element, null);
+
+    for (var i in propertys) {
+        if (element.style[i] !== undefined) {
+            element.style[i] = "preserve-3d";
+        }
+    }
+
+    var st = window.getComputedStyle(element, null),
+        transform = st.getPropertyValue("-webkit-transform-style") ||
+                    st.getPropertyValue("-moz-transform-style") ||
+                    st.getPropertyValue("-ms-transform-style") ||
+                    st.getPropertyValue("transform-style");
+
+    if(transform!=='preserve-3d'){
+      html.className += ' no-preserve-3d';
+    } else {
+    	html.className += ' preserve-3d';
+    }
+    document.body.removeChild(element);
+
+})();
 
 
 function checkPosition(container) {
@@ -615,11 +522,7 @@ function checkPosition(container) {
       //you can uncomment the following line if you don't have other events to bind to the window scroll
       // $(window).off('scroll');
   }
-}
-
-/* */
-
- 
+} 
 
 //draggable funtionality
 function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
@@ -652,7 +555,6 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
           });
 
           $('.resizable').css('width', widthValue); 
-
           
       }).on("mouseup vmouseup", function(e){
           dragElement.removeClass('draggable');

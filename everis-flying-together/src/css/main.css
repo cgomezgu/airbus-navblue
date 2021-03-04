@@ -121,76 +121,33 @@ body {
 }
 .slide__text-wrapper {
   position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 100px;
+  left: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 11;
-  background: skyblue;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  z-index: 12;
+  text-align: left;
 }
 .slide__text-wrapper h1 {
-  margin-bottom: 30px;
+  padding: 8px;
+  font-size: 36px;
+  font-weight: bold;
 }
-.slide__letter {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-text-fill-color: transparent !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
+.slide__text-wrapper h3 {
+  margin-top: 4px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  font-size: 50vw;
-  font-weight: 800;
-  color: #000;
-  z-index: 2;
-  will-change: transform;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.slide__text {
-  font-size: 8vw;
-  font-weight: 800;
-  text-transform: uppercase;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  letter-spacing: 12px;
-  color: #fff;
-  will-change: transform;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.slide__text:nth-child(odd) {
-  z-index: 2;
-}
-.slide__text:nth-child(even) {
-  z-index: 1;
-}
 .slide--1__darkbg {
   left: 0%;
   -webkit-transform: translate3d(0, 0, 0);
@@ -300,15 +257,6 @@ body {
   transform: translate3d(0, 0, 0);
   will-change: transform;
 }
-/* .slide--5__darkbg:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 15, 39, 0.83);
-} */
 .nav {
   position: absolute;
   bottom: 25px;
@@ -327,14 +275,10 @@ body {
   border-radius: 50%;
   border: 2px solid #fff;
   margin-left: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-@media screen and (max-width: 400px) {
-  .nav__slide {
-    width: 22px;
-    height: 22px;
-  }
-}
+
 .nav__slide:hover:after {
   -webkit-transform: translate(-50%, -50%) scale(1, 1);
   -ms-transform: translate(-50%, -50%) scale(1, 1);
@@ -380,28 +324,31 @@ body {
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+  display: flex;
+  align-items: center;
 }
 .side-nav:hover {
   opacity: 0.9;
 }
 .side-nav--right {
   right: 0;
+  justify-content: flex-end;
   background-image: -webkit-gradient(
     linear,
     left top,
     right top,
     from(rgba(255, 255, 255, 0)),
-    to(#eed7ff)
+    to(white)
   );
   background-image: -o-linear-gradient(
     left,
     rgba(255, 255, 255, 0) 0%,
-    #eed7ff 100%
+    white 100%
   );
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
-    #eed7ff 100%
+    white 100%
   );
 }
 .side-nav--right:hover {
@@ -409,22 +356,23 @@ body {
 }
 .side-nav--left {
   left: 0;
+  justify-content: flex-start;
   background-image: -webkit-gradient(
     linear,
     right top,
     left top,
     from(rgba(255, 255, 255, 0)),
-    to(#eed7ff)
+    to(white)
   );
   background-image: -o-linear-gradient(
     right,
     rgba(255, 255, 255, 0) 0%,
-    #eed7ff 100%
+    white 100%
   );
   background-image: linear-gradient(
     to left,
     rgba(255, 255, 255, 0) 0%,
-    #eed7ff 100%
+    white 100%
   );
 }
 .side-nav--left:hover {
@@ -600,12 +548,13 @@ body {
   right: 50%;
   background-color: white;
   color: #5976aa;
-  border: 3px solid #5976aa;
+  border: 0;
   width: 200px;
   height: 48px;
   text-align: center;
   border-radius: 30px;
   font-size: 16px;
+  font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: -24px;
