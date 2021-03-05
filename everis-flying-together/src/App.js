@@ -3,6 +3,7 @@ import logo from './images/navblue-white-logo.png';
 import 'jquery-ui-dist/jquery-ui';
 import './css/main.css';
 import './css/slide-1.css';
+import './css/slide-2.css';
 import './css/slide-3.css';
 import './css/slide-4.css';
 import './css/slide-5.css';

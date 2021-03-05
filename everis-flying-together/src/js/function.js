@@ -95,6 +95,7 @@ $(function () {
               </div>
             </div>                    
             <div class="slide-container">
+             
               <div class="${slideComparatorContainer}">
                 <figure class="image-container">                                
                   <img src=${imageOriginal} alt="Original Image"> 
@@ -127,9 +128,10 @@ $(function () {
                 <img class="cloud-9" style="--i:7;"/>
                 <img class="cloud-10" style="--i:6;"/>
               </div>
-              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>  
-              <p class="txt-instructions">Watch our film to discover some of our experts.</p>       
-              <div class="slide__wrapper-video">                                
+              <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div> 
+              
+              <div class="slide__wrapper-video">  
+                <p class="txt-instructions txt-white">Watch our film to discover some of our experts.</p>                                     
                 <div class="video-container">
                   <iframe poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://player.vimeo.com/video/518638996" class="with-shadow" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>  
@@ -161,23 +163,28 @@ $(function () {
               <h1>Technology</h1>
               <div class="slide__text--subtitle">
                 <h3>To reach the skies, the wings of an airplane use advanced technology and a solid structure enabling them to withstand high pressures and demanding conditions.</h3>
-              </div>
+              </div>              
             </div>               
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
               <div class="draggable-container">
+                <p class="txt-instructions">Clear the clouds to discover our strengths</p>
                 <div class="draggable-clouds">
                   <div class="ui-widget-content draggable-cloud cloud-1"></div>
                   <div class="ui-widget-content draggable-cloud cloud-2"></div>
                   <div class="ui-widget-content draggable-cloud cloud-3"></div>
+                  <div class="ui-widget-content draggable-cloud cloud-4"></div>
                 </div> 
-                <div class="draggable-hidden-container contain-1">
-                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>From tech radar to the chapter</p>
-                  <p class="draggable-hidden-container-subtitle">Accelerate the adoption of new technologies by delivery teams.</p>
+                <div class="hidden-container-centered">
+                  <div class="draggable-hidden-container contain-1">
+                    <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>From tech radar to the chapter</p>
+                    <p class="draggable-hidden-container-subtitle">Accelerate the adoption of new technologies by delivery teams.</p>
+                  </div>
+                  <div class="draggable-hidden-container contain-2">
+                    <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>Generate great impact with your technology</p>
+                    <p class="draggable-hidden-container-subtitle">Evolve the tech radar in an agile and dynamic way looking for quality, security, efficiency and excellence.</p>
+                  </div>
                 </div>
-                <div class="draggable-hidden-container contain-2">
-                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>Generate great impact with your technology</p>
-                  <p class="draggable-hidden-container-subtitle">Evolve the tech radar in an agile and dynamic way looking for quality, security, efficiency and excellence.</p>
-                </div>
+                
               </div>        
             </div>
           </div>`);
@@ -205,9 +212,9 @@ $(function () {
                     <p class="title">DELIVERY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <a class="btn btn-big is-disabled" href="http://globickdashboard.everisflyingtogether.com" target="_blank">
+                      <a class="btn btn-big is-disabled" href="http://globickbacklog.everisflyingtogether.com/" target="_blank">
                         <span>Navigate the product backlog as Globick is being built by the ONETICKET team</span>
-                        Globick Product Dashboard 
+                        Globick Product Backlog 
                       </a>
                       <a class="btn btn-big is-disabled" href="http://globickteam.everisflyingtogether.com" target="_blank">
                         <span>Explore how ONETICKET’s team overcome their challenges and fly altogether to deliver a product</span>
@@ -391,7 +398,7 @@ $(function () {
   // draggable/fadeOut clouds
   $(".draggable-cloud").draggable({
     start: function() {
-      // $(this).fadeTo("slow", 0.1);
+      //$(this).fadeTo("slow", 0.1);
     }
   });
 

@@ -37,16 +37,37 @@
   color: #194a8a;
 }
 
+.slide--4 .txt-instructions {
+  color: #194a8a;
+  font-size: 14px;
+}
+
 .slide--4 .draggable-hidden-container.contain-1 {
-  left: 200px;
-  bottom: 100px;
+  left: 0;
+  bottom: 122px;
 }
 .slide--4 .draggable-hidden-container.contain-2 {
-  right: 200px;
-  top: 300px;
+  right: 0;
+  bottom: 220px;
+}
+
+.slide--4 .txt-instructions {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
 }
 
 /* clouds */
+.slide--4 .hidden-container-centered {
+  position: relative;
+  display: flex;
+  max-width: 940px;
+  margin: auto;
+  height: 100vh;
+  justify-content: space-between;
+}
 .slide--4 .draggable-container {
   position: absolute;
   left: 0;
@@ -56,18 +77,18 @@
   height: 100vh;
 }
 .slide--4 .draggable-container .draggable-clouds .cloud-1 {
-  background: url("../images/draggable-clouds/nube1.png") center center
+  background: url("../images/draggable-clouds/nube4.png") center center
     no-repeat;
   position: absolute;
-  left: 200px;
-  top: 600px;
+  left: 10px;
+  bottom: 0;
   z-index: 100;
   width: 600px;
   height: 300px;
-  background-size: contain;
+  background-size: 100%;
 }
 .slide--4 .draggable-container .draggable-clouds .cloud-2 {
-  background: url("../images/draggable-clouds/cloud-1.png") center center
+  background: url("../images/draggable-clouds/nube4.png") center center
     no-repeat;
   position: absolute;
   right: 300px;
@@ -78,13 +99,24 @@
   background-size: 100%;
 }
 .slide--4 .draggable-container .draggable-clouds .cloud-3 {
-  background: url("../images/draggable-clouds/cloud-1.png") center center
+  background: url("../images/draggable-clouds/nube5.png") center center
     no-repeat;
   position: absolute;
-  left: 890px;
-  top: 180px;
-  width: 400px;
-  height: 300px;
+  left: 10px;
+  bottom: 0;
+  width: 700px;
+  height: 500px;
+  z-index: 100;
+  background-size: 100%;
+}
+.slide--4 .draggable-container .draggable-clouds .cloud-4 {
+  background: url("../images/draggable-clouds/nube5.png") center center
+    no-repeat;
+  position: absolute;
+  left: 600px;
+  bottom: 0px;
+  width: 1000px;
+  height: 800px;
   z-index: 100;
   background-size: 100%;
 }
@@ -93,10 +125,10 @@
   height: 100px;
   transform: scale(1);
   /* animation: pulse 30s infinite; */
-  /* filter: brightness(100%); */
+  filter: brightness(100%);
 }
 .slide--4 .draggable-container .draggable-cloud:hover {
-  /* filter: brightness(110%); */
+  filter: brightness(110%);
   cursor: grab;
 }
 
@@ -111,8 +143,4 @@
   100% {
     transform: scale(0.95);
   }
-}
-
-.draggable-clouds {
-  display: none;
 }

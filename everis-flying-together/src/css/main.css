@@ -156,8 +156,9 @@ body {
 .slide__text-wrapper .slide__text--subtitle {
   background-color: #cef3ff;
   text-align: right;
-  max-width: 630px;
+  max-width: 750px;
   padding: 8px;
+  color: #194a8a;
 }
 .slide__text-wrapper .h3 {
   color: #194a8a;

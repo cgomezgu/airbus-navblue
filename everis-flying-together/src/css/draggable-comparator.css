@@ -160,7 +160,6 @@
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
 }
-
 .blob {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   transform: scale(1);
