@@ -41,40 +41,13 @@
   border-radius: 50%;
 }
 
-/* parallax cabin effect */
-.cd-background-wrapper {
-  /* overflow: hidden;
-  perspective: 4000px; */
-  position: absolute;
-  z-index: 10;
-}
-/* 
-.cd-floating-background {
-  transform-style: preserve-3d;
-}
-
-.cd-floating-background img:first-child {
-  transform: translateZ(50px);
-}
-
-.cd-floating-background img:nth-child(2) {
-  transform: translateZ(290px);
-}
-
-.cd-floating-background img:nth-child(3) {
-  transform: translateZ(400px);
-} */
-
-.cd-floating-background-image-1 {
-  background: url("../images/slide-5/pilot-cabin-transp.png") center center
+.slide--5__darkbg {
+  left: -200%;
+  background: url("../images/slide-5/cabin_assembly.jpg") center center
     no-repeat;
-  min-width: 100%;
-  min-height: 100vh;
   background-size: cover;
-}
-.cd-floating-background-image-2 {
-  background: url("../images/slide-5/control-tower.png") center center no-repeat;
-  min-width: 100%;
-  min-height: 100vh;
-  background-size: cover;
+  background-position: 0px center, 0px center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }

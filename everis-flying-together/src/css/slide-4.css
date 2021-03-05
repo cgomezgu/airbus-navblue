@@ -2,17 +2,17 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 170px;
+  width: 380px;
+  height: 214px;
   color: #194a8a;
-  padding: 24px;
+  padding: 32px;
   background: white;
 }
 
 .slide--4 .draggable-hidden-container .draggable-hidden-container-title {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.43px;
   color: #194a8a;
@@ -39,10 +39,10 @@
 
 .slide--4 .draggable-hidden-container.contain-1 {
   left: 200px;
-  top: 600px;
+  bottom: 100px;
 }
 .slide--4 .draggable-hidden-container.contain-2 {
-  right: 300px;
+  right: 200px;
   top: 300px;
 }
 
@@ -111,4 +111,8 @@
   100% {
     transform: scale(0.95);
   }
+}
+
+.draggable-clouds {
+  display: none;
 }

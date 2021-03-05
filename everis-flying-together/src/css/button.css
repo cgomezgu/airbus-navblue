@@ -57,13 +57,17 @@
 }
 
 .btn {
-  padding: 8px 20px;
-  width: auto;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 6px;
+  width: 105px;
+  height: 42px;
+  min-height: 40px;
   font-size: 13px;
   font-weight: bold;
   text-align: center;
-  line-height: 24px;
+  line-height: 1.15;
   color: #194a8a;
   background-color: white;
   border-radius: 10px;
@@ -74,6 +78,9 @@
 .btn-container-bottom .btn:hover {
   background-color: #e6deef;
   cursor: pointer;
+}
+.btn.btn-big {
+  height: 68px;
 }
 
 .btn-container-bottom {
@@ -92,6 +99,9 @@
 
 /* download button */
 .btn-container-bottom .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 298px;
   height: 69px;
   padding: 22px 38px;
@@ -106,7 +116,15 @@
   color: #194a8a;
 }
 .btn-container-bottom .btn.bg-blue {
+  width: 376px;
+  height: 87px;
+  border-radius: 43px;
   background-color: #cee9f2;
+  font-size: 20px;
+}
+.btn-container-bottom .btn.bg-blue:hover {
+  background-color: #e6deef;
+  cursor: pointer;
 }
 .btn.is-disabled,
 .btn-container-bottom .btn.is-disabled {
@@ -115,11 +133,31 @@
   text-decoration: none;
   background-color: #7da8e0;
 }
-.btn-container-bottom .btn-download .lnr {
-  font-size: 16px;
-  font-weight: bold;
-  color: #194a8a;
+.btn-container-bottom .btn .icn-download {
+  background: url("../images/icn-download.svg") center center no-repeat;
+  margin-right: 16px;
 }
+
+.btn-container-bottom .btn .icn-download {
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+}
+
+.btn-container-bottom .btn.bg-blue .icn-download {
+  width: 28px;
+  height: 28px;
+}
+
+#stepNum1 {
+  margin-top: 52px;
+  margin-right: 34px;
+}
+
+#btnDownload1 {
+  margin-right: 22px;
+}
+
 /* */
 a {
   background: #d2d7d3;
@@ -145,14 +183,14 @@ a.icon:before {
 
 a span {
   background: #fff;
-  color: #222;
+  color: #194a8a;
   font-size: 14px;
   font-weight: bold;
   position: absolute;
   bottom: 0;
   left: -25px;
   right: -25px;
-  padding: 5px 7px;
+  padding: 12px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.4s;
@@ -169,11 +207,26 @@ a span:before {
   border-top: 5px solid #fff;
   position: absolute;
   bottom: -5px;
-  left: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 a:hover span {
   bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* big btn */
+a.btn-big:hover span {
+  bottom: 70px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* extrabig btn */
+a.btn-extrabig:hover span {
+  bottom: 80px;
   visibility: visible;
   opacity: 1;
 }

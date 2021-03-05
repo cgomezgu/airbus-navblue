@@ -124,12 +124,12 @@
 }
 .handle {
   position: absolute;
-  height: 44px;
-  width: 44px;
+  height: 64px;
+  width: 64px;
   left: 90%;
   top: 50%;
-  margin-left: -22px;
-  margin-top: -22px;
+  margin-left: -32px;
+  margin-top: -32px;
   border-radius: 50%;
   background: #cef3ff
     url("https://webdevtrick.com/wp-content/uploads/arrows.svg") no-repeat

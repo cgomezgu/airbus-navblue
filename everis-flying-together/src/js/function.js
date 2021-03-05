@@ -91,7 +91,7 @@ $(function () {
             <div class="slide__text-wrapper">
               <h1>Product</h1>
               <div class="slide__text--subtitle">
-                <h3>Just like the strong wings of dragonflies, we adapt our products to your needs and get the best out of them</h3>
+                <h3>Like dragonflies, we have the call to explore new territories at product level.</h3>
               </div>
             </div>                    
             <div class="slide-container">
@@ -110,9 +110,9 @@ $(function () {
           $slide =
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">  
               <div class="slide__text-wrapper">
-                <h1>Planned delivery</h1>
+                <h1>Delivery</h1>
                 <div class="slide__text--subtitle">
-                  <h3>Like the versatility of a bird's wings, we make the delivery go as planned.</h3>
+                  <h3>Alike the wings of the birds, we combine strength, lightness and flexibility, to make the delivery as planned.</h3>
                 </div>
               </div>  
               <div class="clouds">
@@ -139,16 +139,16 @@ $(function () {
                     <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>                     
                   </div>
                   <div class="bullet"> 
-                    <p class="bullet-title">INIT</p>
-                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>                    
+                    <p class="bullet-title">TRANSITION & ONBOARDING</p>
+                    <p class="bullet-subtitle">Foster collaboration to obtain a deep knowledge of products and its technical specifics.</p>                    
                   </div>
                   <div class="bullet"> 
-                    <p class="bullet-title">INIT</p>
-                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>
+                    <p class="bullet-title">RUNNING</p>
+                    <p class="bullet-subtitle">Embrace program execution, transparency, and continuous learning understanding.</p>
                   </div>
                   <div class="bullet"> 
-                    <p class="bullet-title">INIT</p>
-                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>
+                    <p class="bullet-title">TRANSPARENCY AND A COMMON UNDERSTANDING</p>
+                    <p class="bullet-subtitle">Following the SAFe principles, a close collaboration with an online dashboard for performance indicators in real time, sharing the same common vision on project outcomes.</p>
                   </div>
                 </div>
               </div> 
@@ -158,9 +158,9 @@ $(function () {
           $slide =
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">   
             <div class="slide__text-wrapper">
-              <h1>Let´s take off together</h1>
+              <h1>Technology</h1>
               <div class="slide__text--subtitle">
-                <h3>In the cockpit we will fly to a new destination</h3>
+                <h3>To reach the skies, the wings of an airplane use advanced technology and a solid structure enabling them to withstand high pressures and demanding conditions.</h3>
               </div>
             </div>               
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
@@ -171,12 +171,12 @@ $(function () {
                   <div class="ui-widget-content draggable-cloud cloud-3"></div>
                 </div> 
                 <div class="draggable-hidden-container contain-1">
-                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>Walk together looking into the future</p>
-                  <p class="draggable-hidden-container-subtitle">Continuous discovery methodology fully aligned with your business needs and market trends</p>
+                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>From tech radar to the chapter</p>
+                  <p class="draggable-hidden-container-subtitle">Accelerate the adoption of new technologies by delivery teams.</p>
                 </div>
                 <div class="draggable-hidden-container contain-2">
-                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>From tech radar to the chapter</p>
-                  <p class="draggable-hidden-container-subtitle">Accelerate the adoption of new technologies by your delivery teams</p>
+                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>Generate great impact with your technology</p>
+                  <p class="draggable-hidden-container-subtitle">Evolve the tech radar in an agile and dynamic way looking for quality, security, efficiency and excellence.</p>
                 </div>
               </div>        
             </div>
@@ -187,47 +187,57 @@ $(function () {
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">           
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>           
               <div class="slide__text-wrapper">
-                <h1>Let´s take off together</h1>
+                <h1>Let’s takeoff together</h1>
                 <div class="slide__text--subtitle">
-                  <h3>In the cockpit we will fly to a new destination</h3>
+                  <h3>Take control from the cockpit to achieve our goals.</h3>
                 </div>
               </div>  
               <div class="btn-container">
                 <p class="txt-instructions">Remember to check all instruments before take-off</p>
                 <div class="btn-wrapper">
-                  <span class="step-num">3</span>  
+                  <span class="step-num" id="stepNum1">3</span>  
                   <div class="btn-contain"> 
                     <p class="title">PRODUCT</p>
                     <div class="lines"></div>
-                    <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>Inttrend</a>                    
+                    <a class="btn is-disabled" href="https://inttrend.com/" target="_blank"><span>AI-powered market intelligence platform.​</span>Inttrend</a>                    
                   </div>
                   <div class="btn-contain">
                     <p class="title">DELIVERY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>One ticket</a>
-                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>genome</a>
+                      <a class="btn btn-big is-disabled" href="http://globickdashboard.everisflyingtogether.com" target="_blank">
+                        <span>Navigate the product backlog as Globick is being built by the ONETICKET team</span>
+                        Globick Product Dashboard 
+                      </a>
+                      <a class="btn btn-big is-disabled" href="http://globickteam.everisflyingtogether.com" target="_blank">
+                        <span>Explore how ONETICKET’s team overcome their challenges and fly altogether to deliver a product</span>
+                        Globick Team Metrics
+                      </a>
+                      <a class="btn btn-big is-disabled" href="http://globickcode.everisflyingtogether.com" target="_blank">
+                        <span>Review with our team the status of their code metrics as they advance on the product delivery</span>
+                        Globick Code Metrics
+                      </a>
                     </div>
                   </div>
                   <div class="btn-contain">
                     <p class="title">TECHNOLOGY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>everis Winder</a>
-                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>Dashboard</a>
-                      <a class="btn is-disabled" href="#" target="_blank"><span>Lorem ipsum dolor est</span>AI showcase</a>
+                      <a class="btn is-disabled" href="http://winder.everisflyingtogether.com" target="_blank"><span>everis asset to accompany and guide organizations in the Digital Architecture Strategy Journey.</span>everis Winder</a>
+                      <a class="btn btn-big is-disabled" href="http://dashboard.everisflyingtogether.com" target="_blank"><span>Integrate datasets to analyze trends and take agile decisions in near real time. </span>Real Time Dashboard</a>
+                      <a class="btn btn-big is-disabled" href="http://socialmedia.everisflyingtogether.com" target="_blank"><span>Aeronautical social media analysis with AI techniques to identify trends and market behavior.</span>Trend Analysis</a>
                     </div>
                   </div>
                 </div>               
               </div>
               <div class="btn-container-bottom">  
                 <span class="step-num">1</span>            
-                <a id="btnDownload1" class="btn btn-download" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EXsyikrAS7JOhna0fIgSsWQBO1UD87tCQ5QdZXrrpGFQ-A?e=xfj5HI" target="_blank">
-                  <i class="lnr lnr-download"></i>1 Download the proposal
+                <a id="btnDownload1" class="btn btn-download btn-extrabig" href="http://flymanual.everisflyingtogether.com/" target="_blank">
+                  <i class="icn-download"></i><span>Get the flight manual and let’s travel together.</span>Flight Manual
                 </a> 
                 <span class="step-num">2</span>     
-                <a id="btnDownload2" class="btn btn-download bg-blue is-disabled" href="https://everisgroup-my.sharepoint.com/:p:/g/personal/cgomezgu_everis_com/EXsyikrAS7JOhna0fIgSsWQBO1UD87tCQ5QdZXrrpGFQ-A?e=xfj5HI" target="_blank">
-                  <i class="lnr lnr-download"></i>2 Download the proposal
+                <a id="btnDownload2" class="btn btn-download bg-blue btn-extrabig is-disabled" href="http://deliveryoffer.everisflyingtogether.com" target="_blank">
+                  <i class="icn-download"></i><span>Download our delivery offer and explore how we can work together​</span>Delivery Offer
                 </a>                  
               </div>
               <div class="bg-dark"></div>
@@ -394,90 +404,6 @@ $(function () {
   });
 
 
-/* */
-
- //define store some initial variables
- var halfWindowH = $(window).height()*0.5,
- halfWindowW = $(window).width()*0.5,
- //define a max rotation value (X and Y axises)
- maxRotationY = 5,
- maxRotationX = 3,
- aspectRatio;
-
-//detect if hero <img> has been loaded and evaluate its aspect-ratio
-$('.cd-floating-background').find('img').eq(0).on('load', function() {
- aspectRatio = $(this).width()/$(this).height();
-   if( $('html').hasClass('preserve-3d') ) initBackground();
-}).each(function() {
- //check if image was previously load - if yes, trigger load event
-   if(this.complete) $(this).load();
-});
-
-//detect mouse movement
-$('.cd-background-wrapper').each(function(){
- $(this).on('mousemove', function(event){
-   var wrapperOffsetTop = $(this).offset().top;
-   if( $('html').hasClass('preserve-3d') ) {
-     window.requestAnimationFrame(function(){
-       moveBackground(event, wrapperOffsetTop);
-     });
-   }
- });
-});
-
-//on resize - adjust .cd-background-wrapper and .cd-floating-background dimentions and position
-$(window).on('load', function(){
- if( $('html').hasClass('preserve-3d') ) {
-   window.requestAnimationFrame(function(){
-     halfWindowH = $(window).height()*0.5,
-     halfWindowW = $(window).width()*0.5;
-     initBackground();
-   });
- } else {
-   $('.cd-background-wrapper').attr('style', '');
-   $('.cd-floating-background').attr('style', '').removeClass('is-absolute');
- }
-});
-
-function initBackground() {
- var wrapperHeight = Math.ceil(halfWindowW*2/aspectRatio), 
-   proportions = ( maxRotationY > maxRotationX ) ? 1.1/(Math.sin(Math.PI / 2 - maxRotationY*Math.PI/180)) : 1.1/(Math.sin(Math.PI / 2 - maxRotationX*Math.PI/180)),
-   newImageWidth = Math.ceil(halfWindowW*2*proportions),
-   newImageHeight = Math.ceil(newImageWidth/aspectRatio),
-   newLeft = halfWindowW - newImageWidth/2,
-   newTop = (wrapperHeight - newImageHeight)/2;
-
- //set an height for the .cd-background-wrapper
- $('.cd-background-wrapper').css({
-   'height' : wrapperHeight,
- });
- //set dimentions and position of the .cd-background-wrapper		
- $('.cd-floating-background').addClass('is-absolute').css({
-   'left' : newLeft,
-   'top' : newTop,
-   'width' : newImageWidth,
- });
-}
-
-function moveBackground(event, topOffset) {
- var rotateY = ((-event.pageX+halfWindowW)/halfWindowW)*maxRotationY,
-   yPosition = event.pageY - topOffset,
-   rotateX = ((yPosition-halfWindowH)/halfWindowH)*maxRotationX;
-
- if( rotateY > maxRotationY) rotateY = maxRotationY;
- if( rotateY < -maxRotationY ) rotateY = -maxRotationY;
- if( rotateX > maxRotationX) rotateX = maxRotationX;
- if( rotateX < -maxRotationX ) rotateX = -maxRotationX;
-
- $('.cd-floating-background').css({
-   '-moz-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-     '-webkit-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-   '-ms-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-   '-o-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
-   'transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
- });
-}
-/* */
 });
 
 (function getPerspective(){

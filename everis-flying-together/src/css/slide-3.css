@@ -1,8 +1,8 @@
 .slide--3 .slide__wrapper-video {
   position: absolute;
-  top: 50%;
+  top: 240px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 12;
   display: flex;
   justify-content: space-between;
@@ -16,11 +16,10 @@
   margin-left: 100px;
   display: flex;
   flex-direction: column;
+  min-width: 360px;
 }
 
 .slide--3 .slide__wrapper-video .bullets-container .bullet {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 30px;
   color: #194a8a;
 }
@@ -33,6 +32,7 @@
   background: white;
   padding: 4px;
   margin-bottom: 4px;
+  display: inline-flex;
 }
 .slide--3 .slide__wrapper-video .bullets-container .bullet .bullet-subtitle {
   font-size: 14px;
