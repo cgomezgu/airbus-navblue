@@ -100,7 +100,7 @@ $(function () {
                   <img src=${imageOriginal} alt="Original Image"> 
                   <div class="resize-image"> 
                   </div>              
-                  <span class="handle"></span>
+                  <span class="handle blob white"></span>
                 </figure> 
               </div>
             <div class="slide__darkbg slide--${numSlide}__darkbg slide--${numSlide}__animated-gradient"></div>
@@ -134,25 +134,21 @@ $(function () {
                   <iframe poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg" src="https://player.vimeo.com/video/518638996" class="with-shadow" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>  
                 <div class="bullets-container">
-                  <div class="bullet bullet-1"> 
-                    <div class="bullet-text">
-                      <p>Walk together looking into the future</p>
-                    </div> 
+                  <div class="bullet">
+                    <p class="bullet-title">INIT</p>
+                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>                     
                   </div>
-                  <div class="bullet bullet-1"> 
-                    <div class="bullet-text">
-                      <p>Walk together looking into the future</p>
-                    </div> 
+                  <div class="bullet"> 
+                    <p class="bullet-title">INIT</p>
+                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>                    
                   </div>
-                  <div class="bullet bullet-1"> 
-                    <div class="bullet-text">
-                      <p>Walk together looking into the future</p>
-                    </div> 
+                  <div class="bullet"> 
+                    <p class="bullet-title">INIT</p>
+                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>
                   </div>
-                  <div class="bullet bullet-1"> 
-                    <div class="bullet-text">
-                      <p>Walk together looking into the future</p>
-                    </div> 
+                  <div class="bullet"> 
+                    <p class="bullet-title">INIT</p>
+                    <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>
                   </div>
                 </div>
               </div> 
@@ -170,15 +166,18 @@ $(function () {
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
               <div class="draggable-container">
                 <div class="draggable-clouds">
-                  <ul>
-                    <li>
-                      <div class="ui-widget-content draggable-cloud cloud-1" />
-                    </li>
-                    <li>
-                      <div class="ui-widget-content draggable-cloud cloud-2" />
-                    </li>
-                  </ul>                      
-                </div>                    
+                  <div class="ui-widget-content draggable-cloud cloud-1"></div>
+                  <div class="ui-widget-content draggable-cloud cloud-2"></div>
+                  <div class="ui-widget-content draggable-cloud cloud-3"></div>
+                </div> 
+                <div class="draggable-hidden-container contain-1">
+                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>Walk together looking into the future</p>
+                  <p class="draggable-hidden-container-subtitle">Continuous discovery methodology fully aligned with your business needs and market trends</p>
+                </div>
+                <div class="draggable-hidden-container contain-2">
+                  <p class="draggable-hidden-container-title"><span class="icn-arrow"></span>From tech radar to the chapter</p>
+                  <p class="draggable-hidden-container-subtitle">Accelerate the adoption of new technologies by your delivery teams</p>
+                </div>
               </div>        
             </div>
           </div>`);
@@ -382,7 +381,7 @@ $(function () {
   // draggable/fadeOut clouds
   $(".draggable-cloud").draggable({
     start: function() {
-      $(this).fadeTo("slow", 0.1);
+      // $(this).fadeTo("slow", 0.1);
     }
   });
 

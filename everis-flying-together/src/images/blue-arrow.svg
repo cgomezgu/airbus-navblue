@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="26px" viewBox="0 0 15 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-down-sign-to-navigate</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Slide-3-final" transform="translate(-809.000000, -298.000000)" fill="#194A8A" fill-rule="nonzero">
+            <g id="arrow-down-sign-to-navigate" transform="translate(816.500000, 311.000000) rotate(-90.000000) translate(-816.500000, -311.000000) translate(803.500000, 303.500000)">
+                <path d="M12.9999585,14.5 C12.5519076,14.5 12.1039121,14.331934 11.7623134,13.9965087 L1.01285449,3.43607257 C0.329048503,2.76429782 0.329048503,1.67513021 1.01285449,1.00362723 C1.69638383,0.332124256 2.80483671,0.332124256 3.48869803,1.00362723 L12.9999585,10.3480852 L22.5112743,1.00395336 C23.1950803,0.332450386 24.3034225,0.332450386 24.9868965,1.00395336 C25.6710345,1.67545634 25.6710345,2.76462395 24.9868965,3.4363987 L14.2376036,13.9968348 C13.895839,14.3323145 13.4478434,14.5 12.9999585,14.5 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
