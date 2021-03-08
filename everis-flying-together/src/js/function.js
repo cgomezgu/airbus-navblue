@@ -205,7 +205,7 @@ $(function () {
                   <div class="btn-contain"> 
                     <p class="title">PRODUCT</p>
                     <div class="lines"></div>
-                    <a class="btn is-disabled" href="https://inttrend.com/" target="_blank"><span>AI-powered market intelligence platform.​</span>Inttrend</a>                    
+                    <a class="btn is-disabled" href="https://inttrend.com/" target="_blank"><span>AI-powered market intelligence platform​</span>Inttrend</a>                    
                   </div>
                   <div class="btn-contain">
                     <p class="title">DELIVERY</p>
@@ -229,9 +229,9 @@ $(function () {
                     <p class="title">TECHNOLOGY</p>
                     <div class="lines"></div>
                     <div class="btn-flex">
-                      <a class="btn is-disabled" href="http://winder.everisflyingtogether.com" target="_blank"><span>everis asset to accompany and guide organizations in the Digital Architecture Strategy Journey.</span>everis Winder</a>
-                      <a class="btn btn-big is-disabled" href="http://dashboard.everisflyingtogether.com" target="_blank"><span>Integrate datasets to analyze trends and take agile decisions in near real time. </span>Real Time Dashboard</a>
-                      <a class="btn btn-big is-disabled" href="http://socialmedia.everisflyingtogether.com" target="_blank"><span>Aeronautical social media analysis with AI techniques to identify trends and market behavior.</span>Trend Analysis</a>
+                      <a class="btn is-disabled" href="http://winder.everisflyingtogether.com" target="_blank"><span>everis asset to accompany and guide organizations in the Digital Architecture Strategy Journey</span>everis Winder</a>
+                      <a class="btn btn-big is-disabled" href="http://dashboard.everisflyingtogether.com" target="_blank"><span>Integrate datasets to analyze trends and take agile decisions in near real time</span>Real Time Dashboard</a>
+                      <a class="btn btn-big is-disabled" href="http://socialmedia.everisflyingtogether.com" target="_blank"><span>Aeronautical social media analysis with AI techniques to identify trends and market behavior</span>Trend Analysis</a>
                     </div>
                   </div>
                 </div>               
@@ -239,7 +239,7 @@ $(function () {
               <div class="btn-container-bottom">  
                 <span class="step-num">1</span>            
                 <a id="btnDownload1" class="btn btn-download btn-extrabig" href="http://flightmanual.everisflyingtogether.com/" target="_blank">
-                  <i class="icn-download"></i><span>Get the flight manual and let’s travel together.</span>Flight Manual
+                  <i class="icn-download"></i><span>Get the flight manual and let’s travel together</span>Flight Manual
                 </a> 
                 <span class="step-num">2</span>     
                 <a id="btnDownload2" class="btn btn-download bg-blue btn-extrabig is-disabled" href="http://technicalproposal.everisflyingtogether.com" target="_blank">
