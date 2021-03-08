@@ -2,7 +2,6 @@ import $ from 'jquery';
 import imageOriginal from '../images/draggable-comparator/blueprint-wing-web.jpg';
 
 $(function () {
-  const $cont = $('.container');
   const $slider = $('.slider');
   let $slide = 1;
   const $nav = $('.nav');
@@ -93,9 +92,9 @@ $(function () {
               <div class="slide__text--subtitle">
                 <h3>Like dragonflies, we have the call to explore new territories at product level.</h3>
               </div>
-            </div>                    
-            <div class="slide-container">
-             
+            </div>    
+            <p class="txt-instructions">Scroll along to discover our capacities</p>                
+            <div class="slide-container">             
               <div class="${slideComparatorContainer}">
                 <figure class="image-container">                                
                   <img src=${imageOriginal} alt="Original Image"> 
@@ -466,12 +465,12 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
           xPosition = dragElement.offset().left + dragWidth - e.pageX,
           containerOffset = container.offset().left,
           containerWidth = container.outerWidth(),
-          minLeft = containerOffset + 10,
+          minLeft = containerOffset + 160,
           maxLeft = containerOffset + containerWidth - dragWidth - 10;
       
       dragElement.parents().on("mousemove vmousemove", function(e) {
-          let leftValue = e.pageX + xPosition - dragWidth;
-          
+          let leftValue = e.pageX + xPosition - dragWidth;          
+       
           //constrain the draggable element to move inside his container
           if(leftValue < minLeft ) {
               leftValue = minLeft;
@@ -479,8 +478,8 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
               leftValue = maxLeft;
           }
 
-          let widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
-          
+          var widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+
           $('.draggable').css('left', widthValue).on("mouseup vmouseup", function() {
               $(this).removeClass('draggable');
               resizeElement.removeClass('resizable');
@@ -497,5 +496,7 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
       dragElement.removeClass('draggable');
       resizeElement.removeClass('resizable');
   });
-}
+  
+  
+};
 

@@ -1,8 +1,10 @@
 /* title section */
-.slide-2 .txt-instructions {
+.slide--2 .txt-instructions {
   position: absolute;
-  top: 300px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
+  color: #194a8a;
+  font-size: 14px;
 }
