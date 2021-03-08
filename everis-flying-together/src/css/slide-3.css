@@ -29,13 +29,14 @@
 }
 
 .slide--3 .slide__wrapper-video .bullets-container .bullet {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #194a8a;
 }
 .slide--3 .slide__wrapper-video .bullets-container .bullet:last-child {
   margin-bottom: 0;
 }
 .slide--3 .slide__wrapper-video .bullets-container .bullet .bullet-title {
+  position: relative;
   font-size: 14px;
   font-weight: bold;
   background: white;
@@ -43,6 +44,22 @@
   margin-bottom: 4px;
   display: inline-flex;
 }
+
+.slide--3
+  .slide__wrapper-video
+  .bullets-container
+  .bullet
+  .bullet-title
+  .icn-arrow {
+  position: absolute;
+  top: -0px;
+  left: -30px;
+  background: url("../images/blue-arrow.svg") no-repeat;
+  width: 20px;
+  height: 26px;
+  margin-right: 20px;
+}
+
 .slide--3 .slide__wrapper-video .bullets-container .bullet .bullet-subtitle {
   font-size: 14px;
   font-weight: bold;

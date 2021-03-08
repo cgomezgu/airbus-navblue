@@ -137,19 +137,19 @@ $(function () {
                 </div>  
                 <div class="bullets-container">
                   <div class="bullet">
-                    <p class="bullet-title">INIT</p>
+                    <p class="bullet-title"><span class="icn-arrow"></span>INIT</p>
                     <p class="bullet-subtitle">Taking off towards products, teams, and chapters.</p>                     
                   </div>
                   <div class="bullet"> 
-                    <p class="bullet-title">TRANSITION & ONBOARDING</p>
+                    <p class="bullet-title"><span class="icn-arrow"></span>TRANSITION & ONBOARDING</p>
                     <p class="bullet-subtitle">Foster collaboration to obtain a deep knowledge of products and its technical specifics.</p>                    
                   </div>
                   <div class="bullet"> 
-                    <p class="bullet-title">RUNNING</p>
+                    <p class="bullet-title"><span class="icn-arrow"></span>RUNNING</p>
                     <p class="bullet-subtitle">Embrace program execution, transparency, and continuous learning understanding.</p>
                   </div>
                   <div class="bullet"> 
-                    <p class="bullet-title">TRANSPARENCY AND A COMMON UNDERSTANDING</p>
+                    <p class="bullet-title"><span class="icn-arrow"></span>TRANSPARENCY AND A COMMON UNDERSTANDING</p>
                     <p class="bullet-subtitle">Following the SAFe principles, a close collaboration with an online dashboard for performance indicators in real time, sharing the same common vision on project outcomes.</p>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ $(function () {
             $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">           
             <div class="slide__darkbg slide--${numSlide}__darkbg"></div>           
               <div class="slide__text-wrapper">
-                <h1>Let’s takeoff together</h1>
+                <h1>Let’s take off together</h1>
                 <div class="slide__text--subtitle">
                   <h3>Take control from the cockpit to achieve our goals.</h3>
                 </div>
@@ -398,7 +398,7 @@ $(function () {
   // draggable/fadeOut clouds
   $(".draggable-cloud").draggable({
     start: function() {
-      //$(this).fadeTo("slow", 0.1);
+      $(this).fadeTo("slow", 0.1);
     }
   });
 

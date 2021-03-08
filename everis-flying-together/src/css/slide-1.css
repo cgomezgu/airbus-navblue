@@ -10,6 +10,7 @@
 .slide--1 .card-area {
   display: flex;
   margin: auto;
+  padding-top: 20px;
 }
 
 .slide--1 .card-area .card {

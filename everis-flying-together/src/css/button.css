@@ -1,7 +1,7 @@
 /* button settings */
 .btn-container {
   position: absolute;
-  top: 40%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: -ms-flexbox;
@@ -85,7 +85,7 @@
 
 .btn-container-bottom {
   position: absolute;
-  bottom: 110px;
+  bottom: 90px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: -ms-flexbox;
