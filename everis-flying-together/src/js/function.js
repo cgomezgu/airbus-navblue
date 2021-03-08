@@ -239,12 +239,12 @@ $(function () {
               </div>
               <div class="btn-container-bottom">  
                 <span class="step-num">1</span>            
-                <a id="btnDownload1" class="btn btn-download btn-extrabig" href="http://flymanual.everisflyingtogether.com/" target="_blank">
+                <a id="btnDownload1" class="btn btn-download btn-extrabig" href="http://flightmanual.everisflyingtogether.com/" target="_blank">
                   <i class="icn-download"></i><span>Get the flight manual and let’s travel together.</span>Flight Manual
                 </a> 
                 <span class="step-num">2</span>     
-                <a id="btnDownload2" class="btn btn-download bg-blue btn-extrabig is-disabled" href="http://deliveryoffer.everisflyingtogether.com" target="_blank">
-                  <i class="icn-download"></i><span>Download our delivery offer and explore how we can work together​</span>Delivery Offer
+                <a id="btnDownload2" class="btn btn-download bg-blue btn-extrabig is-disabled" href="http://technicalproposal.everisflyingtogether.com" target="_blank">
+                  <i class="icn-download"></i><span>Download our delivery offer and explore how we can work together​</span>Technical Proposal
                 </a>                  
               </div>
               <div class="bg-dark"></div>
